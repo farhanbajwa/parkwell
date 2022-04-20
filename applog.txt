@@ -1,0 +1,79 @@
+ WARN    2022-04-19 12:43:19,860 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:07,126 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:07,606 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:10,062 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:10,270 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:10,598 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 12:52:10,815 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 14:02:38,372 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 14:03:01,212 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 14:03:02,146 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 14:03:02,370 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 14:03:29,123 [AWT-EventQueue-0] com.app.App  - 
+ both files should be selected 
+  WARN    2022-04-19 14:07:08,675 [AWT-EventQueue-0] com.app.App  - 
+ File 1 and File 2 are Same
+  WARN    2022-04-19 15:08:49,808 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:50,401 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:50,624 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:51,720 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:51,976 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:52,224 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:52,544 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:52,896 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:53,152 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:53,352 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:53,520 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:53,720 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:53,904 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-19 15:08:54,064 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 09:58:52,104 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:01:53,246 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:02:02,516 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:17:07,438 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:22:58,771 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:23:03,561 [AWT-EventQueue-0] com.app.App  - 
+ both files should be selected 
+  WARN    2022-04-20 10:23:08,097 [AWT-EventQueue-0] com.app.App  - 
+ both files should be selected 
+  WARN    2022-04-20 10:25:32,786 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-04-20 10:27:51,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 and File 2 are Same
+  WARN    2022-04-20 10:28:01,590 [AWT-EventQueue-0] com.app.App  - 
+ both files should be selected 
+  WARN    2022-04-20 10:28:07,222 [AWT-EventQueue-0] com.app.App  - 
+ both files should be selected 
+  WARN    2022-04-20 11:22:43,805 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+ 
