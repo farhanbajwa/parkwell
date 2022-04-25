@@ -322,8 +322,9 @@ public class App extends JPanel {
                 // creating PDf
                 String path ="";
                 JFileChooser j  = new JFileChooser();
-                j.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                int x=j.showSaveDialog(panel);
+                j.setCurrentDirectory(new File(System
+                        .getProperty("user.home")));
+                int x=j.showSaveDialog(frame);
                 if(x== JFileChooser.APPROVE_OPTION){
                     path = j.getSelectedFile().getPath();
                 }
@@ -333,7 +334,7 @@ public class App extends JPanel {
                 {
                     PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(path+"_File1.pdf"));
                     document.open();
-                    document.add(new Paragraph("File 1 "));
+                    document.add(new Paragraph("1st File"));
                     for (String temp : intersection1) {
                         if (!temp.equals(",")) {
                             document.add(new Paragraph(String.valueOf(temp)));
@@ -354,7 +355,7 @@ public class App extends JPanel {
                 {
                     PdfWriter writer1 = PdfWriter.getInstance(document1, new FileOutputStream(path+"_File2.pdf"));
                     document1.open();
-                    document1.add(new Paragraph("File 2"));
+                    document1.add(new Paragraph("2nd File"));
                     for (String temp : intersection2) {
                         if (!temp.equals(",")) {
                             document1.add(new Paragraph(String.valueOf(temp)));
@@ -362,7 +363,7 @@ public class App extends JPanel {
                     }
                     document1.close();
                     writer1.close();
-                    JOptionPane.showMessageDialog(panel, "\n Files Downloaded Successfully  ", "INFO",  JOptionPane.INFORMATION_MESSAGE);
+                   // JOptionPane.showMessageDialog(panel, "\n Files Downloaded Successfully  ", "INFO",  JOptionPane.INFORMATION_MESSAGE);
                 } catch (DocumentException error)
                 {
                     error.printStackTrace();
