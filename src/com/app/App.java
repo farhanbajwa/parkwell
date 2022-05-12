@@ -115,11 +115,12 @@ public class App extends JPanel implements helper {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("method call");
+                logger.warn("\n method call");
                 FileReadActionPerformed(e);
             }
 
             private void FileReadActionPerformed(ActionEvent evt) {
-                System.out.println("Select a file");
+                System.out.println("Select a file"); logger.warn("\n Select a file ");
 
                 JFileChooser fileChooser = new JFileChooser();
                 fileChooser.setPreferredSize(new Dimension(600, 550));
@@ -135,7 +136,7 @@ public class App extends JPanel implements helper {
                     try {
                         br = new BufferedReader(new FileReader(selectedFile));
                         StringBuilder sb = new StringBuilder();
-                     //   System.out.print(sb+"sb");
+                    //    System.out.print(sb);
                         String line = br.readLine();
                         while (line != null) {
                             sb.append(line);
@@ -146,13 +147,13 @@ public class App extends JPanel implements helper {
                             if(line != null) {
                                 if(!line.equals(" ")) {
                                     FileA.addAll(Collections.singleton(line));
-                                    System.out.println(line);
+                                    System.out.println(line);   logger.warn(line);
                                 }
                             }
                         }
                         if(FileA.isEmpty()) {
-                            System.out.println("File One is empty");
-                            JOptionPane.showMessageDialog(panel, "\n You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                            System.out.println("File One is empty"); logger.warn("\n File One is empty ");
+                            JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
                         labelpathA.setText(String.valueOf(selectedFile));
@@ -163,6 +164,7 @@ public class App extends JPanel implements helper {
                         try {
                             br.close();
                         } catch (IOException ex) {
+                            logger.warn(JPanel.class.getName());
                             Logger.getLogger(JPanel.class.getName()).log(Level.ALL, null, ex);
                         }
                     }
@@ -181,12 +183,12 @@ public class App extends JPanel implements helper {
         Btnfile2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("method call");
+                System.out.println("method call"); logger.warn("\n 2nd method call");
                 FileReadActionPerformed(e);
             }
 
             private void FileReadActionPerformed(ActionEvent evt) {
-                System.out.println("select 2nd file");
+                System.out.println("select 2nd file"); logger.warn("\n Select 2nd file ");
 
                 JFileChooser fileChooser = new JFileChooser();
                 fileChooser.setPreferredSize(new Dimension(600, 550));
@@ -211,13 +213,13 @@ public class App extends JPanel implements helper {
                             if(line != null) {
                                 if(!line.equals(" ")) {
                                     FileB.addAll(Collections.singleton(line));
-                                    System.out.println(line);
+                                    System.out.println(line);   logger.warn(line);
                                 }
                             }
                         }
                         if(FileB.isEmpty()) {
-                            System.out.println("File One is empty");
-                            JOptionPane.showMessageDialog(panel, "\n You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                            System.out.println("File Two is empty"); logger.warn("\n File Two is empty ");
+                            JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
                              return;
                         }
                         labelpathB.setText(String.valueOf(selectedFile));
@@ -231,6 +233,7 @@ public class App extends JPanel implements helper {
                             br.close();
                         } catch (IOException ex) {
                             Logger.getLogger(JPanel.class.getName()).log(Level.ALL, null, ex);
+                            logger.warn("\n Select Both Files");
                         }
                     }
                 }
@@ -262,8 +265,8 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty() && FileB.isEmpty()) {
                     System.out.print(" Select Both Files \n");
                     logger.warn("\n Select Both Files ");
-                    JOptionPane.showMessageDialog(panel, "\n  Select Both Files ", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                    helper.reset();
+                    JOptionPane.showMessageDialog(panel, " Select Both Files ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    helper.reset();    logger.warn("\n Reset");
                     System.out.print("\t" + FileA + "\t" + FileB);
                     System.out.print("Reset");
                     return;
@@ -271,19 +274,15 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty()) {
                     System.out.print("Seletct File Card Number for Billing \n");
                     logger.warn("\nSeletct File Card Number for Billing ");
-                    JOptionPane.showMessageDialog(panel, "\n Seletct File Card Number for Billing  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                   // helper.reset();
+                    JOptionPane.showMessageDialog(panel, " Seletct File Card Number for Billing  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
-                   // System.out.print("Reset");
                     return;
                 }
                 if (FileB.isEmpty()) {
-                    System.out.print("Seletct File Access List Card Only \n");
-                    logger.warn("\nSeletct File Access List Card Only ");
-                    JOptionPane.showMessageDialog(panel, "\n Seletct File Access List Card Only  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                   // helper.reset();
+                    System.out.print("Seletct File Access List Card  \n");
+                    logger.warn("\nSeletct File Access List Card ");
+                    JOptionPane.showMessageDialog(panel, " Seletct File Access List Card  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
-                    System.out.print("Reset");
                     return;
                 }
                 // To find intersection
@@ -314,7 +313,7 @@ public class App extends JPanel implements helper {
                 if(filenameA.equals(filenameB)){
                     System.out.print("\n Files are Same");
                     logger.warn("\n Files are Same");
-                    JOptionPane.showMessageDialog(panel, "\n Files are Same", "INFO",  JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(panel, " Files are Same", "INFO",  JOptionPane.INFORMATION_MESSAGE);
                     return;
                 }
                 /**
@@ -331,12 +330,12 @@ public class App extends JPanel implements helper {
                  * show dialog box when
                  *
                  */
-                JOptionPane.showMessageDialog(panel, "\n  Choose Location where you want to save PDF ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(panel, "  Choose Location where you want to save PDF ", "INFO", JOptionPane.INFORMATION_MESSAGE);
                 /**
                  * Generating PDF
                  *
                  */
-                new successMsg();
+
                 /**
                  * get dynamic path for download PDF
                  */
@@ -406,8 +405,9 @@ public class App extends JPanel implements helper {
                          *  Show loader or show success message
                          *
                          */
-                       new loader();
 
+                       new successMsg();
+                        new loader();
 
                     } catch (DocumentException error) {
                         error.printStackTrace();
@@ -415,7 +415,7 @@ public class App extends JPanel implements helper {
                         error.printStackTrace();
                     }
                 } else if (result == JFileChooser.CANCEL_OPTION) {
-                    System.out.print("\n cancle");
+                    System.out.print("\n cancle");    logger.warn("\n cancle");
                     return;
                 }
             }
@@ -432,7 +432,7 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty() && FileB.isEmpty()) {
                     System.out.print(" No File Selected \n");
                     logger.warn("\n No File Selected ");
-                    JOptionPane.showMessageDialog(panel, "\n  No File Selected", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(panel, " No File Selected", "INFO", JOptionPane.INFORMATION_MESSAGE);
                     helper.reset();
                     System.out.print("\t" + FileA + "\t" + FileB);
                     System.out.print("Reset");
@@ -441,7 +441,7 @@ public class App extends JPanel implements helper {
                 if (!(FileA.isEmpty()) || !(FileB.isEmpty())) {
                     System.out.print(" Choose New File  \n");
                     logger.warn("\n Choose New File ");
-                    JOptionPane.showMessageDialog(panel, "\n  Choose New File", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(panel, " Choose New File", "INFO", JOptionPane.INFORMATION_MESSAGE);
                     helper.reset();
                     System.out.print("\t" + FileA + "\t" + FileB);
                     System.out.print("Reset");

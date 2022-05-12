@@ -44,7 +44,7 @@ public interface helper {
     static JLabel labelpathA = new JLabel();
     static JLabel labelpathB = new JLabel();
 
-    static JFrame frame = new JFrame("Please Upload (.text Files) ");
+    static JFrame frame = new JFrame("Parkwell - Compare .txt files");
     static JPanel panel = new JPanel();
     static JPanel panel2 = new JPanel();
 
@@ -101,21 +101,22 @@ public interface helper {
         Btndownload.setFocusPainted(false);
 
         //panel.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
-       /// panel2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        /// panel2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         panel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
 
         // JLabel label1 = new JLabel("Card Number for Billing");
         JLabel head = new JLabel("Parkwell File Comparison Utility");
         head.setFont(new Font("Dialog", Font.BOLD, 45));
-        head.setBounds(400,150,50,50);
-       // JLabel label1 = new JLabel("Card Number for Billing");
+       // head.setBounds(200,400,50,50);
+
+        // JLabel label1 = new JLabel("Card Number for Billing");
         JLabel label1 = new JLabel("Card Number for Billing");
         label1.setFont(new Font("Dialog", Font.BOLD, 25));
-       // JLabel label2 = new JLabel("Access List Card Only");
-        JLabel label2 = new JLabel("Access List Card Only");
+        // JLabel label2 = new JLabel("Access List Card Only");
+        JLabel label2 = new JLabel("Access List Card ");
         label2.setFont(new Font("Dialog", Font.BOLD, 25));
-        JLabel label3 = new JLabel("    Get your PDF File ");
+        JLabel label3 = new JLabel("Get your PDF File ");
         label3.setFont(new Font("Dialog", Font.BOLD, 25));
 
         label1.setForeground(Color.WHITE);
@@ -123,8 +124,9 @@ public interface helper {
         label3.setForeground(Color.WHITE);
         head.setForeground(Color.YELLOW);
 
-        labelpathA.setHorizontalAlignment(JLabel.CENTER);
-        labelpathB.setHorizontalAlignment(JLabel.CENTER);
+        labelpathA.setHorizontalAlignment(JLabel.LEFT);
+        labelpathB.setHorizontalAlignment(JLabel.LEFT);
+        head.setHorizontalAlignment(JLabel.CENTER);
 
         labelpathA.setFont(new Font("Helvetica Neue", Font.PLAIN, 19));
         labelpathB.setFont(new Font("Helvetica Neue", Font.PLAIN, 19));
@@ -155,13 +157,15 @@ public interface helper {
         gbc.fill = GridBagConstraints.WEST;
         gbc.gridx = 1;
         gbc.gridy = 1;
-       // gbc.weightx = 130;
-        gbc.insets = new Insets(20, 10, 10, 35);
+        // gbc.weightx = 130;
+        gbc.insets = new Insets(20, 0, 10, 0);
+        gbc.anchor = GridBagConstraints.EAST;
         panel2.add(head,gbc);
         gbc.fill = GridBagConstraints.FIRST_LINE_START;
         gbc.gridx = 1;
         gbc.gridy = 2;
         gbc.insets = new Insets(10, 30, 10, 35);
+        gbc.anchor = GridBagConstraints.WEST;
         panel.add(label1, gbc);
         gbc.fill = GridBagConstraints.FIRST_LINE_START;
         gbc.gridx = 2;
@@ -188,9 +192,11 @@ public interface helper {
         gbc.gridy = 6;
         gbc.weightx = 4;
         panel.add(labelpathB, gbc);
-        gbc.fill = GridBagConstraints.FIRST_LINE_START;
+        gbc.fill = GridBagConstraints.WEST;
         gbc.gridx = 1;
         gbc.gridy = 8;
+        gbc.insets = new Insets(10, 30, 10, 35);
+        gbc.anchor = GridBagConstraints.WEST;
         panel.add(label3, gbc);
         gbc.fill = GridBagConstraints.FIRST_LINE_START;
         gbc.gridx = 2;
@@ -204,9 +210,9 @@ public interface helper {
         frame.add(panel2);
         frame.add(panel);
         frame.pack();
-        frame.setSize(990, 600);
+        frame.setSize(890, 600);
         panel.setSize(500, 600);
-        panel2.setSize(990,100);
+        panel2.setSize(890,100);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
@@ -262,4 +268,3 @@ public interface helper {
         UIManager.put("Tree.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
     }
 }
-

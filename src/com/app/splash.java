@@ -18,7 +18,7 @@ import java.awt.*;
 public class splash extends JWindow {
     JFrame frame;
 
-    JLabel image=new JLabel(new ImageIcon("src/com/app/image.gif"));
+    JLabel image=new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
     JLabel text=new JLabel("PARKWELL");
     JLabel version=new JLabel(" V 1.0  -  2022 ");
     JProgressBar progressBar=new JProgressBar();

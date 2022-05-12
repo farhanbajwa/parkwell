@@ -1645,4 +1645,211 @@ Seletct File Card Number for Billing
  Choose New File 
   WARN    2022-05-11 16:58:02,055 [AWT-EventQueue-0] com.app.App  - 
  File 1 contains special character "" 
+  WARN    2022-05-11 17:10:33,325 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:10:33,326 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-05-11 17:11:08,233 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:11:08,233 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-05-11 17:12:36,224 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:12:36,224 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-05-11 17:16:32,921 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:17:30,804 [AWT-EventQueue-0] com.app.App  - 
+ Files are Same
+  WARN    2022-05-11 17:17:33,884 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-11 17:21:21,549 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:21:21,550 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-05-11 17:21:21,550 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:21:36,185 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-11 17:21:36,185 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "@" 
+  WARN    2022-05-11 17:21:36,186 [AWT-EventQueue-0] com.app.App  - 
+ File 1 contains special character "" 
+  WARN    2022-05-12 09:45:44,221 [AWT-EventQueue-0] com.app.App  - 
+ No File Selected 
+  WARN    2022-05-12 11:40:57,037 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Access List Card 
+  WARN    2022-05-12 11:41:02,191 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-12 11:42:23,736 [AWT-EventQueue-0] com.app.App  - 
+ No File Selected 
+  WARN    2022-05-12 11:42:42,896 [AWT-EventQueue-0] com.app.App  - 
+ Select Both Files 
+  WARN    2022-05-12 11:58:52,060 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-12 12:03:56,250 [AWT-EventQueue-0] com.app.App  - 
+ Select Both Files 
+  WARN    2022-05-12 12:16:35,295 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-12 12:17:43,844 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-12 12:18:21,436 [AWT-EventQueue-0] com.app.App  - 
+ Choose New File 
+  WARN    2022-05-12 12:41:38,102 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-12 12:41:38,103 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-12 12:41:44,059 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+  WARN    2022-05-12 12:41:44,059 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+  WARN    2022-05-12 12:50:26,591 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-12 12:50:26,592 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-12 12:50:31,599 [AWT-EventQueue-0] com.app.App  - 1
+  WARN    2022-05-12 12:50:31,599 [AWT-EventQueue-0] com.app.App  - 7
+  WARN    2022-05-12 12:50:31,599 [AWT-EventQueue-0] com.app.App  - 8
+  WARN    2022-05-12 12:50:31,599 [AWT-EventQueue-0] com.app.App  - 9
+  WARN    2022-05-12 12:50:31,600 [AWT-EventQueue-0] com.app.App  - 10
+  WARN    2022-05-12 12:50:31,600 [AWT-EventQueue-0] com.app.App  - 11
+  WARN    2022-05-12 12:50:31,600 [AWT-EventQueue-0] com.app.App  - 12
+  WARN    2022-05-12 12:50:33,573 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+  WARN    2022-05-12 12:50:33,573 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 60225
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 60226
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 60224
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 60221
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 60219
+  WARN    2022-05-12 12:50:38,068 [AWT-EventQueue-0] com.app.App  - 70227
+  WARN    2022-05-12 12:50:38,069 [AWT-EventQueue-0] com.app.App  - 70225
+  WARN    2022-05-12 12:50:38,069 [AWT-EventQueue-0] com.app.App  - 70226
+  WARN    2022-05-12 12:50:38,069 [AWT-EventQueue-0] com.app.App  - 70224
+  WARN    2022-05-12 12:50:38,069 [AWT-EventQueue-0] com.app.App  - 70224
+  WARN    2022-05-12 12:50:38,069 [AWT-EventQueue-0] com.app.App  - 70224
+  WARN    2022-05-12 14:17:44,264 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-12 14:17:44,265 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-12 14:17:50,667 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 11:18:34,135 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "@" 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 11:18:34,135 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 11:19:15,853 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 11:19:15,854 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "@" 
+  WARN    2022-05-12 14:17:50,668 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 11:19:52,901 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:33:32,686 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:33:32,687 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "@" 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:33:32,688 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,669 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:42:44,391 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:43:16,357 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:45:06,058 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:45:46,074 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 15:45:53,314 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,670 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 16:52:29,244 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -  Select Both Files 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-10 16:52:32,506 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 10:56:12,304 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 10:56:36,129 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -  Files are Same
+  WARN    2022-05-12 14:17:50,671 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 10:58:37,710 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -  Choose New File 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,397 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,399 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "#" 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,400 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,672 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "$" 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,400 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "%" 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,401 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "&" 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,402 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "'" 
+  WARN    2022-05-12 14:17:50,673 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,402 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "(" 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,403 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character ")" 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,403 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "*" 
+  WARN    2022-05-12 14:17:50,674 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,404 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,675 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "+" 
+  WARN    2022-05-12 14:17:50,675 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,404 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,675 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "," 
+  WARN    2022-05-12 14:17:50,675 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,405 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,675 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "-" 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,405 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "." 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,406 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "/" 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,406 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,676 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character ":" 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,407 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character ";" 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,407 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "<" 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,408 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "=" 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,408 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character ">" 
+  WARN    2022-05-12 14:17:50,677 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,409 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "?" 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,409 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "@" 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,410 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "[" 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,410 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "]" 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,411 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "^" 
+  WARN    2022-05-12 14:17:50,678 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,411 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "_" 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,411 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "{" 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,412 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "|" 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 14:45:44,412 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "}" 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:33,540 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  Files are Same
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:37,293 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,679 [AWT-EventQueue-0] com.app.App  -  Choose New File 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:38,862 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -  Select Both Files 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:48,782 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:48,782 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "@" 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:42:48,782 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:50:46,561 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  - Seletct File Access List Card Only 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:50:58,655 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -  Choose New File 
+  WARN    2022-05-12 14:17:50,680 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:51:05,344 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -  No File Selected 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:51:13,495 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -  Choose New File 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:51:33,536 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  - Seletct File Card Number for Billing 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-11 16:51:53,502 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -  Choose New File 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -   WARN    2022-05-12 12:31:58,727 [AWT-EventQueue-0] com.app.App  - 
+  WARN    2022-05-12 14:17:50,681 [AWT-EventQueue-0] com.app.App  -  File 1 contains special character "" 
  
