@@ -14,7 +14,7 @@ public class successMsg {
     JProgressBar progressBar=new JProgressBar();
     successMsg() {
         createGUI();
-        addImage();
+      //  addImage();
         addText();
 
         Timer timer = new Timer(13000, new ActionListener(){

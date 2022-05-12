@@ -26,7 +26,7 @@ public class splash extends JWindow {
     splash()
     {
         createGUI();
-        addImage();
+      //  addImage();
         addText();
         addVersion();
         addProgressBar();

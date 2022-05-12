@@ -73,38 +73,38 @@ public class App extends JPanel implements helper {
          * Teaxt Fields And Pannels
          *
          */
-       helper.font();
+        helper.font();
 
         /**
          * UiStyling contains all lables buttons
          * panel frame
          * and text fields alignment
          */
-       helper.UiStyling();
+        helper.UiStyling();
 
         /**
          *  creates pattern layout
          */
-            PatternLayout layout = new PatternLayout();
-            String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
-            layout.setConversionPattern(conversionPattern);
+        PatternLayout layout = new PatternLayout();
+        String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
+        layout.setConversionPattern(conversionPattern);
 
-            // creates console appender
-            ConsoleAppender consoleAppender = new ConsoleAppender();
-            consoleAppender.setLayout(layout);
-            consoleAppender.activateOptions();
+        // creates console appender
+        ConsoleAppender consoleAppender = new ConsoleAppender();
+        consoleAppender.setLayout(layout);
+        consoleAppender.activateOptions();
 
-            // creates file appender for logs
-            FileAppender fileAppender = new FileAppender();
-            fileAppender.setFile("applog.txt");
-            fileAppender.setLayout(layout);
-            fileAppender.activateOptions();
+        // creates file appender for logs
+        FileAppender fileAppender = new FileAppender();
+        fileAppender.setFile("applog.txt");
+        fileAppender.setLayout(layout);
+        fileAppender.activateOptions();
 
-            // configures the root logger
-            Logger rootLogger = Logger.getRootLogger();
-            rootLogger.setLevel(Level.DEBUG);
-            rootLogger.addAppender(consoleAppender);
-            rootLogger.addAppender(fileAppender);
+        // configures the root logger
+        Logger rootLogger = Logger.getRootLogger();
+        rootLogger.setLevel(Level.DEBUG);
+        rootLogger.addAppender(consoleAppender);
+        rootLogger.addAppender(fileAppender);
 
 
         /**
@@ -136,7 +136,7 @@ public class App extends JPanel implements helper {
                     try {
                         br = new BufferedReader(new FileReader(selectedFile));
                         StringBuilder sb = new StringBuilder();
-                    //    System.out.print(sb);
+                        //    System.out.print(sb);
                         String line = br.readLine();
                         while (line != null) {
                             sb.append(line);
@@ -156,7 +156,16 @@ public class App extends JPanel implements helper {
                             JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
-                        labelpathA.setText(String.valueOf(selectedFile));
+                        String pathA = String.valueOf(selectedFile);
+                        System.out.println(pathA.length() + "length here");
+                        for(int x= 0 ; x <= pathA.length(); x++){
+                            if(x > 47){
+                                labelpathA.setText(pathA.substring(0,47)+"....");
+                            }
+                            else{
+                                labelpathA.setText(String.valueOf(pathA));
+                            }
+                        }
                         filenameA = selectedFile.getName();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -175,10 +184,10 @@ public class App extends JPanel implements helper {
             }
         });
 
-             /**
-               * btnfile2 perform an action listener
-               * on click of file2 Button
-              */
+        /**
+         * btnfile2 perform an action listener
+         * on click of file2 Button
+         */
 
         Btnfile2.addActionListener(new ActionListener() {
             @Override
@@ -220,11 +229,20 @@ public class App extends JPanel implements helper {
                         if(FileB.isEmpty()) {
                             System.out.println("File Two is empty"); logger.warn("\n File Two is empty ");
                             JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                             return;
+                            return;
                         }
-                        labelpathB.setText(String.valueOf(selectedFile));
+                        String pathB = String.valueOf(selectedFile);
+                        System.out.println(pathB.length() + "length here");
+                        for(int x= 0 ; x <= pathB.length(); x++){
+                            if(x > 47){
+                                labelpathB.setText(pathB.substring(0,47)+"....");
+                            }
+                            else{
+                                labelpathB.setText(String.valueOf(pathB));
+                            }
+                        }
                         filenameB = selectedFile.getName();
-                      //  String all = sb.toString();
+                        //  String all = sb.toString();
                         //textArea2.setText(all);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -406,7 +424,7 @@ public class App extends JPanel implements helper {
                          *
                          */
 
-                       new successMsg();
+                        new successMsg();
                         new loader();
 
                     } catch (DocumentException error) {

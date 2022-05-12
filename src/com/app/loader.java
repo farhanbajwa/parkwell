@@ -16,7 +16,7 @@ public class loader {
     JProgressBar progressBar=new JProgressBar();
     loader() {
          createGUI();
-         addImage();
+       //  addImage();
          addText();
 
         Timer timer = new Timer(6000, new ActionListener(){
