@@ -114,7 +114,7 @@ public interface helper {
         JLabel label1 = new JLabel("Card Number for Billing");
         label1.setFont(new Font("Dialog", Font.BOLD, 25));
         // JLabel label2 = new JLabel("Access List Card Only");
-        JLabel label2 = new JLabel("Access List Card ");
+        JLabel label2 = new JLabel("Access Card List ");
         label2.setFont(new Font("Dialog", Font.BOLD, 25));
         JLabel label3 = new JLabel("Get your PDF File ");
         label3.setFont(new Font("Dialog", Font.BOLD, 25));

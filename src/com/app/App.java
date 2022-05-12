@@ -279,9 +279,9 @@ public class App extends JPanel implements helper {
                     return;
                 }
                 if (FileB.isEmpty()) {
-                    System.out.print("Seletct File Access List Card  \n");
-                    logger.warn("\nSeletct File Access List Card ");
-                    JOptionPane.showMessageDialog(panel, " Seletct File Access List Card  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Seletct File Access Card List \n");
+                    logger.warn("\nSeletct File Access Card List  ");
+                    JOptionPane.showMessageDialog(panel, " Seletct File Access Card List   ", "INFO", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
