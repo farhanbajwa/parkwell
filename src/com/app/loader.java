@@ -4,21 +4,29 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
+
+/***
+ *  The Application that simply compare two files
+ *  provide the standard output.
+ *
+ * @author  Mahnoor
+ * @version 1.0
+ * @since   2022-04-20
+ *
+ * */
 
 public class loader {
 
     JFrame frame;
     JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
-    JLabel text = new JLabel(" Comparing, please wait... ");
+    JLabel text = new JLabel(" Comparing, Please wait... ");
     JLabel message = new JLabel();
     JProgressBar progressBar=new JProgressBar();
     loader() {
          createGUI();
-       //  addImage();
+         //addImage();
          addText();
-
         Timer timer = new Timer(6000, new ActionListener(){
             public void actionPerformed(ActionEvent evt) {
                 frame.dispose();
@@ -32,7 +40,7 @@ public class loader {
         frame = new JFrame();
         frame.getContentPane().setLayout(null);
         frame.setUndecorated(true);
-        frame.setSize(890, 600);
+        frame.setSize(810, 390);
         frame.setLocationRelativeTo(null);
         frame.getContentPane().setBackground(new Color(95, 158, 160));
         frame.setVisible(true);
@@ -50,15 +58,6 @@ public class loader {
         text.setBounds(90, 200, 750, 100);
         text.setForeground(Color.YELLOW);
         frame.add(text);
-    }
-    public void addProgressBar(){
-        progressBar.setBounds(300,380,400,50);
-        progressBar.setBorderPainted(true);
-        progressBar.setStringPainted(true);
-        progressBar.setBackground(Color.yellow);
-        progressBar.setForeground(Color.BLACK);
-        progressBar.setValue(0);
-        frame.add(progressBar);
     }
 }
 

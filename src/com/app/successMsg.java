@@ -5,11 +5,21 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/***
+ *  The Application that simply compare two files
+ *  provide the standard output.
+ *
+ * @author  Mahnoor
+ * @version 1.0
+ * @since   2022-04-20
+ *
+ * */
+
 public class successMsg {
 
     JFrame frame;
     JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
-    JLabel text = new JLabel(" Both files compared successfully ");
+    JLabel text = new JLabel(" Both Files Compared Successfully ");
     JLabel message = new JLabel();
     JProgressBar progressBar=new JProgressBar();
     successMsg() {
@@ -17,7 +27,7 @@ public class successMsg {
       //  addImage();
         addText();
 
-        Timer timer = new Timer(13000, new ActionListener(){
+        Timer timer = new Timer(8000, new ActionListener(){
             public void actionPerformed(ActionEvent evt) {
                 frame.dispose();
             }
@@ -30,7 +40,7 @@ public class successMsg {
         frame = new JFrame();
         frame.getContentPane().setLayout(null);
         frame.setUndecorated(true);
-        frame.setSize(890, 600);
+        frame.setSize(810, 390);
         frame.setLocationRelativeTo(null);
         frame.getContentPane().setBackground(new Color(95, 158, 160));
         frame.setVisible(true);
@@ -48,14 +58,5 @@ public class successMsg {
         text.setBounds(90, 200, 650, 100);
         text.setForeground(Color.YELLOW);
         frame.add(text);
-    }
-    public void addProgressBar(){
-        progressBar.setBounds(300,380,400,50);
-        progressBar.setBorderPainted(true);
-        progressBar.setStringPainted(true);
-        progressBar.setBackground(Color.yellow);
-        progressBar.setForeground(Color.BLACK);
-        progressBar.setValue(0);
-        frame.add(progressBar);
     }
 }

@@ -3,8 +3,6 @@ package com.app;
 import javax.swing.*;
 import java.awt.*;
 
-
-
 /***
  *  The Application that simply compare two files
  *  provide the standard output.

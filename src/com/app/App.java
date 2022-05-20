@@ -3,7 +3,6 @@ package com.app;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.text.AttributeSet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,44 +10,33 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.util.TimerTask;
 
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 
-import com.itextpdf.text.Font.FontFamily;
+
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
-import javafx.scene.control.ProgressBar;
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PatternLayout;
 
-
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Document;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
 
 
 /***
@@ -131,6 +119,7 @@ public class App extends JPanel implements helper {
                         .getProperty("user.home")));
                 int result = fileChooser.showOpenDialog(frame);
                 if (result == JFileChooser.APPROVE_OPTION) {
+                    FileA.clear();
                     File selectedFile = fileChooser.getSelectedFile();
                     BufferedReader br = null;
                     try {
@@ -142,12 +131,15 @@ public class App extends JPanel implements helper {
                             sb.append(line);
                             sb.append(System.lineSeparator());
                             line = br.readLine();
-                            System.out.print(line);
+                           // System.out.print(line);
                             //null empty not added
                             if(line != null) {
                                 if(!line.equals(" ")) {
-                                    FileA.addAll(Collections.singleton(line));
-                                    System.out.println(line);   logger.warn(line);
+                                    String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
+                                    FileA.addAll(Collections.singleton(lineAfterTrim));
+                                    System.out.println(lineAfterTrim);
+                                    System.out.println(FileA);
+
                                 }
                             }
                         }
@@ -167,6 +159,7 @@ public class App extends JPanel implements helper {
                             }
                         }
                         filenameA = selectedFile.getName();
+                        Btnreset.setEnabled(true);
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
@@ -178,9 +171,9 @@ public class App extends JPanel implements helper {
                         }
                     }
                 }
-                if(!FileA.isEmpty()) {
-                    Btnfile1.setEnabled(false);
-                }
+//                if(!FileA.isEmpty()) {
+//                    Btnfile1.setEnabled(false);
+//                }
             }
         });
 
@@ -208,6 +201,7 @@ public class App extends JPanel implements helper {
                         .getProperty("user.home")));
                 int result = fileChooser.showOpenDialog(frame);
                 if (result == JFileChooser.APPROVE_OPTION) {
+                    FileB.clear();
                     File selectedFile = fileChooser.getSelectedFile();
                     BufferedReader br = null;
                     try {
@@ -221,8 +215,10 @@ public class App extends JPanel implements helper {
                             // null empty not added
                             if(line != null) {
                                 if(!line.equals(" ")) {
-                                    FileB.addAll(Collections.singleton(line));
-                                    System.out.println(line);   logger.warn(line);
+                                    String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
+                                    FileB.addAll(Collections.singleton(lineAfterTrim));
+                                    System.out.println(lineAfterTrim);
+                                    System.out.println(FileB);
                                 }
                             }
                         }
@@ -242,8 +238,7 @@ public class App extends JPanel implements helper {
                             }
                         }
                         filenameB = selectedFile.getName();
-                        //  String all = sb.toString();
-                        //textArea2.setText(all);
+                        Btnreset.setEnabled(true);
                     } catch (Exception e) {
                         e.printStackTrace();
                     } finally {
@@ -255,9 +250,9 @@ public class App extends JPanel implements helper {
                         }
                     }
                 }
-                if(!FileB.isEmpty()) {
-                    Btnfile2.setEnabled(false);
-                }
+//                if(!FileB.isEmpty()) {
+//                    Btnfile2.setEnabled(false);
+//                }
             }
         });
 
@@ -369,6 +364,7 @@ public class App extends JPanel implements helper {
                 j.setCurrentDirectory(new File(System.getProperty("user.home")));
                 int result = j.showSaveDialog(frame);
                 if (result == JFileChooser.APPROVE_OPTION) {
+                    Btnreset.setEnabled(false);
                     path = j.getSelectedFile().getPath();
                     /**
                      *   Creating
@@ -447,24 +443,21 @@ public class App extends JPanel implements helper {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (FileA.isEmpty() && FileB.isEmpty()) {
-                    System.out.print(" No File Selected \n");
-                    logger.warn("\n No File Selected ");
-                    JOptionPane.showMessageDialog(panel, " No File Selected", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                    helper.reset();
-                    System.out.print("\t" + FileA + "\t" + FileB);
-                    System.out.print("Reset");
-                    return;
-                }
+                JLabel messageConf = new JLabel("Are you sure you want to" + message.getText() +  " ? " );
+
                 if (!(FileA.isEmpty()) || !(FileB.isEmpty())) {
-                    System.out.print(" Choose New File  \n");
-                    logger.warn("\n Choose New File ");
-                    JOptionPane.showMessageDialog(panel, " Choose New File", "INFO", JOptionPane.INFORMATION_MESSAGE);
-                    helper.reset();
-                    System.out.print("\t" + FileA + "\t" + FileB);
-                    System.out.print("Reset");
+                    //JOptionPane.showMessageDialog(panel, " Are You Sure You Want to Reset File ? ", "INFO", JOptionPane.showConfirmDialog());
+                    int result = JOptionPane.showConfirmDialog(
+                            frame, messageConf , "Reset Confirmation", JOptionPane.YES_NO_OPTION);
+                    if (result == JOptionPane.YES_OPTION) {
+                        helper.reset();
+                        Btnreset.setEnabled(false);
+                        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    }
+                    else if (result == JOptionPane.NO_OPTION)
+                        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                     return;
-                }
+                  }
             }
         });
     }
