@@ -11094,4 +11094,1452 @@ Seletct File Access Card List
  Select 2nd file 
   WARN    2022-05-20 15:25:42,714 [AWT-EventQueue-0] com.app.App  - 
  File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
- 
+  WARN    2022-05-20 17:56:39,352 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-20 17:56:39,353 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-20 17:56:46,521 [AWT-EventQueue-0] com.app.App  - 
+ File One is empty 
+  WARN    2022-05-20 17:57:22,357 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-20 17:57:22,357 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-20 17:57:27,199 [AWT-EventQueue-0] com.app.App  - 
+ File One is empty 
+  WARN    2022-05-20 17:57:28,878 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-20 17:57:28,878 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-20 17:57:33,934 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+  WARN    2022-05-20 17:57:33,934 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+  WARN    2022-05-20 17:57:37,778 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+  WARN    2022-05-20 17:57:37,779 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+  WARN    2022-05-20 17:57:37,780 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+  WARN    2022-05-20 17:57:37,781 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+  WARN    2022-05-20 17:57:37,782 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+  WARN    2022-05-20 17:57:37,783 [AWT-EventQueue-0] com.app.App  - 
+ Files are Same
+  WARN    2022-05-20 17:58:35,590 [AWT-EventQueue-0] com.app.App  - 
+ Select Both Files 
+  WARN    2022-05-20 17:59:24,708 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+  WARN    2022-05-20 17:59:29,060 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-20 17:59:29,060 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+  WARN    2022-05-20 17:59:35,205 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+  WARN    2022-05-20 17:59:35,206 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Access Card List  
+  WARN    2022-05-20 18:00:48,827 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+  WARN    2022-05-20 18:00:48,828 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+  WARN    2022-05-20 18:01:03,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+  WARN    2022-05-20 18:01:03,365 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Card Number for Billing 
+  WARN    2022-05-20 18:04:46,890 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-20 18:04:46,890 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+  WARN    2022-05-20 18:04:54,314 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+  WARN    2022-05-20 18:04:54,314 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+  WARN    2022-05-20 18:05:48,322 [AWT-EventQueue-0] com.app.App  - 
+ cancle
+  DEBUG   2022-05-23 10:21:48,108 [main] com.app.App  - this is a debug log message
+ INFO    2022-05-23 10:21:48,110 [main] com.app.App  - this is a information log message
+ WARN    2022-05-23 10:21:48,110 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 10:22:26,114 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 10:22:26,114 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 11:03:04,715 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:03:04,718 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:03:04,718 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 11:04:49,749 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:04:49,750 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:04:49,750 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:04:52,886 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:04:52,886 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:05:04,582 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:05:04,582 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:05:10,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 11:05:10,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 11:05:10,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 11:05:10,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 11:05:10,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 11:05:10,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 11:05:10,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 11:05:10,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 11:05:10,363 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 11:05:10,363 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 11:09:15,980 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:09:15,980 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+DEBUG   2022-05-23 11:17:38,309 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:17:38,310 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:17:38,310 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:17:39,720 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:17:39,720 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:17:51,520 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:17:51,520 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:17:59,080 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:17:59,080 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:18:06,492 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 11:18:06,492 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 11:18:06,492 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 11:18:06,493 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+DEBUG   2022-05-23 11:19:32,854 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:19:32,855 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:19:32,855 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:19:33,607 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:19:33,607 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:19:42,727 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:19:42,727 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:19:48,319 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:19:48,319 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:19:54,043 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 11:19:54,043 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 11:19:54,043 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 11:19:54,044 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 11:20:33,975 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:20:33,975 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 11:35:47,442 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:35:47,445 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:35:47,445 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:35:54,575 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:35:54,575 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:36:02,340 [AWT-EventQueue-0] com.app.App  - 
+ File is Empty. Please Upload a Valid File 
+DEBUG   2022-05-23 11:36:43,193 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:36:43,194 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:36:43,194 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:36:43,679 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:36:43,679 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:36:49,783 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:36:49,783 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:36:53,333 [AWT-EventQueue-0] com.app.App  - 
+ File is Empty. Please Upload a Valid File 
+WARN    2022-05-23 11:36:56,831 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:36:56,831 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:37:00,113 [AWT-EventQueue-0] com.app.App  - 
+ File Two is empty 
+WARN    2022-05-23 11:37:12,239 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:37:12,239 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 11:39:59,364 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:39:59,365 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:39:59,365 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:40:00,349 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:40:00,350 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:40:05,077 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:40:05,077 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:40:11,362 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:40:11,363 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 11:40:11,364 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:40:11,365 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 11:40:11,366 [AWT-EventQueue-0] com.app.App  - 
+  Source and Target Files are Same.Please Upload Different Files for Comparison 
+DEBUG   2022-05-23 11:41:31,068 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:41:31,070 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:41:31,070 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:41:31,872 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Card Number for Billing 
+DEBUG   2022-05-23 11:42:59,264 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:42:59,265 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:42:59,265 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:43:00,352 [AWT-EventQueue-0] com.app.App  - 
+ Please Upload Both Files for Comparison 
+WARN    2022-05-23 11:43:08,240 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+WARN    2022-05-23 11:43:09,204 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:43:09,204 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:43:13,740 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:43:13,740 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:43:21,596 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:43:21,596 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:43:24,515 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:43:24,515 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:43:28,884 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 11:43:28,885 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 11:43:28,886 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Access Card List  
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 11:43:43,708 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 11:43:43,709 [AWT-EventQueue-0] com.app.App  - 
+Seletct File Access Card List  
+DEBUG   2022-05-23 11:56:26,263 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:56:26,265 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:56:26,265 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:56:27,910 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:56:27,910 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:56:35,582 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:56:35,582 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:56:41,013 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:56:41,014 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:56:57,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+WARN    2022-05-23 11:57:08,810 [AWT-EventQueue-0] com.app.App  - 
+ cancle
+WARN    2022-05-23 11:57:12,677 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 11:57:18,528 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+WARN    2022-05-23 11:57:22,349 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:57:22,349 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:57:28,829 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:57:28,829 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:57:33,853 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+WARN    2022-05-23 11:57:33,853 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "2ikjokjokoijoijo9ijoij" 
+WARN    2022-05-23 11:57:33,853 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+DEBUG   2022-05-23 11:58:51,945 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 11:58:51,948 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 11:58:51,948 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 11:58:56,021 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:58:56,021 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:58:59,915 [AWT-EventQueue-0] com.app.App  - 
+ File is empty.Please upload a valid file
+WARN    2022-05-23 11:59:07,892 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:59:07,892 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:59:12,403 [AWT-EventQueue-0] com.app.App  - 
+ File Two is empty 
+WARN    2022-05-23 11:59:25,972 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 11:59:25,972 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 11:59:30,820 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 11:59:30,820 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:59:34,176 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:59:34,177 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 11:59:34,178 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 11:59:34,179 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 11:59:34,180 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+WARN    2022-05-23 11:59:58,372 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 11:59:59,864 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+DEBUG   2022-05-23 12:00:36,431 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:00:36,433 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:00:36,433 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 12:01:15,755 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:01:15,756 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:01:15,756 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:01:16,696 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 12:01:24,671 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+DEBUG   2022-05-23 12:05:06,418 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:05:06,419 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:05:06,419 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:05:07,257 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:05:07,257 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 12:05:45,890 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:05:45,892 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:05:45,892 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:05:47,425 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:05:47,425 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 12:07:04,818 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:07:04,819 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:07:04,819 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:07:06,209 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:07:06,209 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 12:07:39,402 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:07:39,403 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:07:39,403 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:07:40,656 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:07:40,656 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 12:09:17,673 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:09:17,674 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:09:17,674 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:09:20,632 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:09:20,632 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+DEBUG   2022-05-23 12:10:33,903 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:10:33,905 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:10:33,905 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:10:35,251 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 12:10:44,020 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+WARN    2022-05-23 12:10:44,662 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:10:44,663 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:10:54,895 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:10:54,895 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:11:02,039 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 12:11:04,043 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+WARN    2022-05-23 12:11:05,215 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:11:05,215 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:11:11,180 [AWT-EventQueue-0] com.app.App  - 
+ File is empty.Please upload a valid file
+WARN    2022-05-23 12:11:14,078 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:11:14,079 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:11:18,006 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:11:18,006 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:11:21,336 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:11:21,337 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:11:21,338 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:11:21,340 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+DEBUG   2022-05-23 12:12:15,110 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:12:15,111 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:12:15,112 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:12:15,798 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:12:15,799 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:12:21,918 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:12:21,918 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:12:25,657 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 12:12:25,658 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 12:12:25,659 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:12:25,660 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:12:25,661 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:12:25,662 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:12:25,662 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:12:25,663 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+DEBUG   2022-05-23 12:12:45,379 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:12:45,380 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:12:45,380 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:12:46,054 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:12:46,054 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:12:52,150 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:12:52,150 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:12:55,666 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:12:55,666 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:12:55,666 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 12:12:55,666 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:12:55,666 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 12:12:55,667 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:12:55,668 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:12:55,669 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:12:55,670 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+DEBUG   2022-05-23 12:13:47,643 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:13:47,644 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:13:47,645 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:13:48,141 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:13:48,141 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:13:54,324 [AWT-EventQueue-0] com.app.App  - 
+ File is empty.Please upload a valid file
+WARN    2022-05-23 12:14:51,357 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:14:51,357 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:14:59,021 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:14:59,021 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:15:01,801 [AWT-EventQueue-0] com.app.App  - 
+ File Two is empty 
+WARN    2022-05-23 12:15:03,332 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:15:03,332 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:15:09,161 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:15:09,161 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:15:09,161 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Age:'+age+'," 
+WARN    2022-05-23 12:15:09,161 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:15:09,161 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>*Delete</span>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</li>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</a>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>Delete</span>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "#file-list-header" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<span>***Delete</span>" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "font-size:13px;" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:15:09,162 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "finall" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:15:09,163 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:15:09,164 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:15:09,165 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:15:09,166 [AWT-EventQueue-0] com.app.App  - 
+Source and target files are same.Please upload different files for comparison
+WARN    2022-05-23 12:16:33,340 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:16:33,340 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:18:34,859 [AWT-EventQueue-0] com.app.App  - 
+Please upload both files for comparison
+WARN    2022-05-23 12:19:21,015 [AWT-EventQueue-0] com.app.App  - 
+ Reset
+WARN    2022-05-23 12:19:21,586 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:19:21,586 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:19:28,115 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+WARN    2022-05-23 12:19:28,115 [AWT-EventQueue-0] com.app.App  - 
+ Seletct file access card list 
+WARN    2022-05-23 12:20:39,201 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:20:39,201 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:20:44,882 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:20:44,883 [AWT-EventQueue-0] com.app.App  - 
+Seletct file card number for billing 
+WARN    2022-05-23 12:21:23,257 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:21:23,257 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<br/>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<h:messagestyle="color:red;"id="descriptionError"showDetail="true"/>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<divstyle="height:15px;">" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<h:inputTextareaid="description"cols="160"rows="6"" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</h:inputTextarea>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "</div>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "maxlength="5000"style="width:500px">" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<f:attributename="fieldRef"value="description"/>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "<f:validatorvalidatorId="requiredValidator"/>" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="(currentUser.userType=='SCH'&&currentUser.admin&&currentUser.userId!=list.ownerId)">" 
+WARN    2022-05-23 12:21:28,890 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "varage="#{smrUser.individualInfo.age}";" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Age:'+age+'," 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ang-href="#library/{{list.id}}"data-toggle="modal"data-target="#deleteModal"class="btn-delete">" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>*Delete</span>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.admin">" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</li>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "</a>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>Delete</span>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<ling-show="currentUser.userId!=list.ownerId&&currentUser.userType=='SCH'&&currentUser.admin">" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "#file-list-header" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>&&&Delete</span>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "Work-from-HomeTransitionduringCOVID-19Pandemic" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "<span>***Delete</span>" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "font-size:13px;" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "||currentUser.userType!='MHA'" 
+WARN    2022-05-23 12:21:28,891 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "finall" 
+WARN    2022-05-23 12:26:41,514 [AWT-EventQueue-0] com.app.App  - 
+ cancle
+WARN    2022-05-23 12:28:35,414 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:28:35,415 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:28:38,614 [AWT-EventQueue-0] com.app.App  - 
+ File is empty.Please upload a valid file
+DEBUG   2022-05-23 12:45:38,928 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:45:38,929 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:45:38,929 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 12:46:05,801 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:46:05,803 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:46:05,804 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 12:46:06,390 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 12:46:06,390 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 12:46:12,766 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 12:46:12,766 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 12:46:22,457 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 12:46:22,457 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 12:46:22,457 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "," 
+WARN    2022-05-23 12:46:22,457 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "," 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 12:46:22,458 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 12:46:22,459 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 12:46:22,459 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+DEBUG   2022-05-23 12:55:07,692 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 12:55:07,695 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 12:55:07,695 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 13:01:40,448 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 13:01:40,450 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 13:01:40,450 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 13:01:41,671 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 13:01:41,671 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 13:01:46,871 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 13:01:46,871 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 13:01:51,683 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:03:23,343 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:03:23,346 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:03:23,346 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:03:24,611 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:03:24,611 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:03:34,163 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:03:34,163 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:03:41,422 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "," 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "," 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 14:03:41,423 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 14:03:41,424 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 14:03:41,424 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 14:03:41,424 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+DEBUG   2022-05-23 14:04:31,413 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:04:31,415 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:04:31,415 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:04:34,466 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:04:34,466 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:04:40,066 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:04:40,066 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:04:45,022 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:07:47,302 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:07:47,303 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:07:47,303 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:08:30,040 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:08:30,040 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:08:41,824 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:08:41,824 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:08:46,572 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:10:37,413 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:10:37,415 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:10:37,415 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:10:41,303 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:10:41,303 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:10:48,247 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:10:48,247 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "," 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "," 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 14:10:54,180 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 14:10:54,181 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+DEBUG   2022-05-23 14:11:53,014 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:11:53,017 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:11:53,017 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:11:53,918 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:11:53,918 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:12:04,014 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:12:04,014 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:12:09,106 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "/5" 
+WARN    2022-05-23 14:12:09,106 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings ",3" 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "," 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "," 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "." 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "." 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "1fg" 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special character  or strings "?" 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "?" 
+WARN    2022-05-23 14:12:09,107 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "23@" 
+WARN    2022-05-23 14:12:09,108 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+WARN    2022-05-23 14:12:09,108 [AWT-EventQueue-0] com.app.App  - 
+ File 2 (Access Card List) contains special character "," 
+DEBUG   2022-05-23 14:15:28,426 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:15:28,428 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:15:28,428 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:15:36,429 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:15:36,429 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:15:43,133 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:15:43,133 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:15:48,833 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:16:30,038 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:16:30,041 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:16:30,041 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:16:31,092 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:16:31,092 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:16:36,508 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:16:36,508 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:16:41,497 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:17:24,967 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:17:24,969 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:17:24,969 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:17:25,620 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:17:25,620 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:17:30,477 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:17:30,477 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:17:36,489 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+DEBUG   2022-05-23 14:18:06,051 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 14:18:06,053 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 14:18:06,053 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 14:18:07,348 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 14:18:07,348 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 14:18:15,796 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 14:18:15,796 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 14:18:20,528 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 
+ WARN    2022-05-23 14:47:54,408 [AWT-EventQueue-0] com.app.App  - 
+ method call
+  WARN    2022-05-23 14:47:54,409 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+ DEBUG   2022-05-23 15:07:51,940 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:07:51,942 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:07:51,942 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:11:20,204 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:11:20,206 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:11:20,206 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:12:29,719 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:12:29,721 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:12:29,721 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:12:53,113 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:12:53,116 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:12:53,116 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 15:12:53,119 [main] com.app.App  - user.home
+DEBUG   2022-05-23 15:19:23,126 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:19:23,128 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:19:23,128 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:20:37,364 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:20:37,365 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:20:37,365 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:23:10,294 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:23:10,296 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:23:10,296 [main] com.app.App  - this is a warning log message
+DEBUG   2022-05-23 15:26:59,440 [main] com.app.App  - this is a debug log message
+INFO    2022-05-23 15:26:59,442 [main] com.app.App  - this is a information log message
+WARN    2022-05-23 15:26:59,442 [main] com.app.App  - this is a warning log message
+WARN    2022-05-23 15:27:32,251 [AWT-EventQueue-0] com.app.App  - 
+ method call
+WARN    2022-05-23 15:27:32,251 [AWT-EventQueue-0] com.app.App  - 
+ Select a file 
+WARN    2022-05-23 15:27:47,939 [AWT-EventQueue-0] com.app.App  - 
+ 2nd method call
+WARN    2022-05-23 15:27:47,939 [AWT-EventQueue-0] com.app.App  - 
+ Select 2nd file 
+WARN    2022-05-23 15:27:53,878 [AWT-EventQueue-0] com.app.App  - 
+ File 1 (card number for billing) contains special characters or strings "2ikjokjokoijoijo9ijoij" 

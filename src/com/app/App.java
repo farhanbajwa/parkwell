@@ -10,6 +10,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Date;
@@ -37,6 +39,7 @@ import org.apache.log4j.PatternLayout;
 
 import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
+import org.apache.log4j.PropertyConfigurator;
 
 
 /***
@@ -73,6 +76,12 @@ public class App extends JPanel implements helper {
         /**
          *  creates pattern layout
          */
+
+        /**
+         * set and get applog text file in user home ... for logs generation
+         */
+        File f = new File(System.getProperty("user.home")+"/applog.txt");
+
         PatternLayout layout = new PatternLayout();
         String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
         layout.setConversionPattern(conversionPattern);
@@ -84,7 +93,7 @@ public class App extends JPanel implements helper {
 
         // creates file appender for logs
         FileAppender fileAppender = new FileAppender();
-        fileAppender.setFile("applog.txt");
+        fileAppender.setFile(String.valueOf(f));
         fileAppender.setLayout(layout);
         fileAppender.activateOptions();
 
@@ -144,8 +153,8 @@ public class App extends JPanel implements helper {
                             }
                         }
                         if(FileA.isEmpty()) {
-                            System.out.println("File One is empty"); logger.warn("\n File One is empty ");
-                            JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                            System.out.println("File One is empty"); logger.warn("\n File is empty.Please upload a valid file");
+                            JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
                         String pathA = String.valueOf(selectedFile);
@@ -223,8 +232,8 @@ public class App extends JPanel implements helper {
                             }
                         }
                         if(FileB.isEmpty()) {
-                            System.out.println("File Two is empty"); logger.warn("\n File Two is empty ");
-                            JOptionPane.showMessageDialog(panel, " You selected Empty File", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                            System.out.println(" File is empty.Please upload a valid file "); logger.warn("\n File Two is empty ");
+                            JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
                         String pathB = String.valueOf(selectedFile);
@@ -276,25 +285,25 @@ public class App extends JPanel implements helper {
                 helper.checkingforSpecialCharacter();
 
                 if (FileA.isEmpty() && FileB.isEmpty()) {
-                    System.out.print(" Select Both Files \n");
-                    logger.warn("\n Select Both Files ");
-                    JOptionPane.showMessageDialog(panel, " Select Both Files ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Please upload both files for comparison \n");
+                    logger.warn("\nPlease upload both files for comparison");
+                    JOptionPane.showMessageDialog(panel, "Please upload both files for comparison", "Upload files", JOptionPane.INFORMATION_MESSAGE);
                     helper.reset();    logger.warn("\n Reset");
                     System.out.print("\t" + FileA + "\t" + FileB);
                     System.out.print("Reset");
                     return;
                 }
                 if (FileA.isEmpty()) {
-                    System.out.print("Seletct File Card Number for Billing \n");
-                    logger.warn("\nSeletct File Card Number for Billing ");
-                    JOptionPane.showMessageDialog(panel, " Seletct File Card Number for Billing  ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Seletct file card number for billing \n");
+                    logger.warn("\nSeletct file card number for billing ");
+                    JOptionPane.showMessageDialog(panel, "Seletct file card number for billing", "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
                 if (FileB.isEmpty()) {
-                    System.out.print("Seletct File Access Card List \n");
-                    logger.warn("\nSeletct File Access Card List  ");
-                    JOptionPane.showMessageDialog(panel, " Seletct File Access Card List   ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Seletct file access card list\n");
+                    logger.warn("\n Seletct file access card list ");
+                    JOptionPane.showMessageDialog(panel, "Seletct file access card list", "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
@@ -324,9 +333,9 @@ public class App extends JPanel implements helper {
                  *   show dialog box for same file name..
                  */
                 if(filenameA.equals(filenameB)){
-                    System.out.print("\n Files are Same");
-                    logger.warn("\n Files are Same");
-                    JOptionPane.showMessageDialog(panel, " Files are Same", "INFO",  JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("\nSource and target files are same.Please upload different files for comparison ");
+                    logger.warn("\nSource and target files are same.Please upload different files for comparison");
+                    JOptionPane.showMessageDialog(panel, "Source and target files are same.Please upload different files \nfor comparison", "Same Files",  JOptionPane.INFORMATION_MESSAGE);
                     return;
                 }
                 /**
@@ -343,7 +352,7 @@ public class App extends JPanel implements helper {
                  * show dialog box when
                  *
                  */
-                JOptionPane.showMessageDialog(panel, "  Choose Location where you want to save PDF ", "INFO", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(panel, "Please specify location where you want to save PDF", "Save pdf", JOptionPane.INFORMATION_MESSAGE);
                 /**
                  * Generating PDF
                  *
@@ -372,6 +381,9 @@ public class App extends JPanel implements helper {
                      */
                     Document document = new Document();
                     try {
+
+                        String date = new SimpleDateFormat("dd/MM/YYYY", Locale.US).format(new Date());
+
                         String getPath = path + ".pdf";
                         String setPath = path + "_" + times + ".pdf";
                         System.out.print(setPath + "   set path  \n");
@@ -379,12 +391,14 @@ public class App extends JPanel implements helper {
                         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(setPath));
                         document.open();
                         Font fontStyle_Bold = FontFactory.getFont(FontFactory.HELVETICA, 10f, Font.BOLD);
-                        document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris\n", fontStyle_Bold));
+                        document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris"+
+                                "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" +
+                                "Printed "+ date, fontStyle_Bold));
                         document.add(Chunk.NEWLINE);
                         for (String temp : intersection2) {
-                            if (!temp.equals(",")) {
+                            //if (!temp.equals(",")) {
                                 document.add(new Paragraph(String.valueOf(temp)));
-                            }
+                            //}
                         }
                         document.add(Chunk.NEWLINE);
                         document.addHeader("header", "header content");
@@ -400,9 +414,9 @@ public class App extends JPanel implements helper {
                         //document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris\n",fontStyle_Bold));
                         document.add(Chunk.NEWLINE);
                         for (String temp : intersection1) {
-                            if (!temp.equals(",")) {
+                          //  if (!temp.equals(",")) {
                                 document.add(new Paragraph(String.valueOf(temp)));
-                            }
+                         //   }
                         }
                         document.add(Chunk.NEWLINE);
                         document.add(new Paragraph("Count: " + intersection1.size()));
@@ -443,12 +457,11 @@ public class App extends JPanel implements helper {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                JLabel messageConf = new JLabel("Are you sure you want to" + message.getText() +  " ? " );
+                JLabel messageConf = new JLabel("Are you sure you want to reset all fields ? " );
 
                 if (!(FileA.isEmpty()) || !(FileB.isEmpty())) {
-                    //JOptionPane.showMessageDialog(panel, " Are You Sure You Want to Reset File ? ", "INFO", JOptionPane.showConfirmDialog());
                     int result = JOptionPane.showConfirmDialog(
-                            frame, messageConf , "Reset Confirmation", JOptionPane.YES_NO_OPTION);
+                            frame, messageConf , "Reset Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE);
                     if (result == JOptionPane.YES_OPTION) {
                         helper.reset();
                         Btnreset.setEnabled(false);

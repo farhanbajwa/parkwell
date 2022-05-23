@@ -45,7 +45,7 @@ public interface helper {
 
     static JLabel labelpathA = new JLabel();
     static JLabel labelpathB = new JLabel();
-    static JLabel message = new JLabel("Reset Files");
+    static JLabel message = new JLabel("reset all fields");
 
     static JFrame frame = new JFrame("Parkwell - Compare .txt Files");
     static JPanel panel = new JPanel();
@@ -55,7 +55,7 @@ public interface helper {
      * creates a custom logger and log messages
      * in file applog.txt
      */
-    public static Logger logger = Logger.getLogger(App.class);
+    public static Logger logger = Logger.getLogger(com.app.App.class);
 
     /**
      * method for special character checking
@@ -273,9 +273,9 @@ public interface helper {
      * Same font size and font family
      */
     public static void font() {
-        UIManager.put("Button.border", BorderFactory.createLineBorder(Color.black));
+      //  UIManager.put("Button.border", BorderFactory.createLineBorder(Color.black));
        // UIManager.put("Button.font", BorderFactory.
-        UIManager.put("Button.border", BorderFactory.createDashedBorder(null));
+      //  UIManager.put("Button.border", BorderFactory.createDashedBorder(null));
         UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
         UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 25)));
         UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
