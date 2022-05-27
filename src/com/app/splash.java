@@ -15,14 +15,14 @@ import java.io.IOException;
  *
  * */
 
-public class splash extends JWindow {
+public class  splash extends JWindow {
 
 
     Font  f;
 
     {
         try {
-            f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Bold.ttf"));
+            f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
         } catch (FontFormatException e) {
             e.printStackTrace();
         } catch (IOException e) {

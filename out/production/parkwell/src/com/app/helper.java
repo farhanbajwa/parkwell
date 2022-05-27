@@ -122,7 +122,7 @@ public interface helper {
      */
     static void UiStyling() throws IOException, FontFormatException {
 
-        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Bold.ttf"));
+        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
         Font font = f.deriveFont(Font.PLAIN , 25f);
 
         /**
@@ -177,7 +177,7 @@ public interface helper {
         labelpathA.setForeground(Color.yellow);
         labelpathB.setForeground(Color.yellow);
 
-        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Regular.ttf"));
+        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
         Font btnfont = regularfont.deriveFont(Font.BOLD , 25f);
         Btnfile1.setText("Browse...");
         Btnfile1.setFont(btnfont);
@@ -291,7 +291,7 @@ public interface helper {
      */
     public static void font() throws IOException, FontFormatException {
 
-        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Regular.ttf"));
+        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
   //      Font f = volution.deriveFont(Font.BOLD , 48f);
         UIManager.put("Label.font", new FontUIResource(f.deriveFont(Font.BOLD,25f)));
 
