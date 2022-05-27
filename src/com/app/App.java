@@ -80,7 +80,7 @@ public class App extends JPanel implements helper {
         /**
          * set and get applog text file in user home ... for logs generation
          */
-        File logfile = new File(System.getProperty("user.home")+"/parkwell/applog.txt");
+        File logfile = new File(System.getProperty("user.home")+"/parkwellMain/applog.txt");
 
         PatternLayout layout = new PatternLayout();
         String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
