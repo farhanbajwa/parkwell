@@ -10,8 +10,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Date;
@@ -39,7 +37,8 @@ import org.apache.log4j.PatternLayout;
 
 import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
-import org.apache.log4j.PropertyConfigurator;
+
+import static java.awt.Font.createFont;
 
 
 /***
@@ -56,7 +55,8 @@ public class App extends JPanel implements helper {
     static String filenameA = null;
     static String filenameB = null;
 
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException, FontFormatException {
 
         new splash();
         /**
@@ -80,7 +80,7 @@ public class App extends JPanel implements helper {
         /**
          * set and get applog text file in user home ... for logs generation
          */
-        File f = new File(System.getProperty("user.home")+"/applog.txt");
+        File f = new File(System.getProperty("user.home")+"/parkwell/applog.txt");
 
         PatternLayout layout = new PatternLayout();
         String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
@@ -140,7 +140,7 @@ public class App extends JPanel implements helper {
                             sb.append(line);
                             sb.append(System.lineSeparator());
                             line = br.readLine();
-                           // System.out.print(line);
+                            // System.out.print(line);
                             //null empty not added
                             if(line != null) {
                                 if(!line.equals(" ")) {
@@ -232,7 +232,7 @@ public class App extends JPanel implements helper {
                             }
                         }
                         if(FileB.isEmpty()) {
-                            System.out.println(" File is empty.Please upload a valid file "); logger.warn("\n File Two is empty ");
+                            System.out.println(" File is empty.Please upload a valid file "); logger.warn("\n File is empty.Please upload a valid file ");
                             JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
@@ -294,16 +294,16 @@ public class App extends JPanel implements helper {
                     return;
                 }
                 if (FileA.isEmpty()) {
-                    System.out.print("Seletct file card number for billing \n");
-                    logger.warn("\nSeletct file card number for billing ");
-                    JOptionPane.showMessageDialog(panel, "Seletct file card number for billing", "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Select file card number for billing \n");
+                    logger.warn("\nSelect file card number for billing ");
+                    JOptionPane.showMessageDialog(panel, "Select file card number for billing", "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
                 if (FileB.isEmpty()) {
-                    System.out.print("Seletct file access card list\n");
-                    logger.warn("\n Seletct file access card list ");
-                    JOptionPane.showMessageDialog(panel, "Seletct file access card list", "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    System.out.print("Select file access card list\n");
+                    logger.warn("\n Select file access card list ");
+                    JOptionPane.showMessageDialog(panel, "Select file access card list", "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
@@ -335,7 +335,7 @@ public class App extends JPanel implements helper {
                 if(filenameA.equals(filenameB)){
                     System.out.print("\nSource and target files are same.Please upload different files for comparison ");
                     logger.warn("\nSource and target files are same.Please upload different files for comparison");
-                    JOptionPane.showMessageDialog(panel, "Source and target files are same.Please upload different files \nfor comparison", "Same Files",  JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(panel, "Source and target files are same.Please upload \ndifferent files for comparison", "Same Files",  JOptionPane.INFORMATION_MESSAGE);
                     return;
                 }
                 /**
@@ -390,19 +390,18 @@ public class App extends JPanel implements helper {
 
                         PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(setPath));
                         document.open();
-                        Font fontStyle_Bold = FontFactory.getFont(FontFactory.HELVETICA, 10f, Font.BOLD);
+                        Font fontStyle_Bold = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
                         document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris"+
-                                "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" +
-                                "Printed "+ date, fontStyle_Bold));
+                                "\t"+"                             Printed "+ date, fontStyle_Bold));
                         document.add(Chunk.NEWLINE);
                         for (String temp : intersection2) {
                             //if (!temp.equals(",")) {
-                                document.add(new Paragraph(String.valueOf(temp)));
+                            document.add(new Paragraph(String.valueOf(temp)));
                             //}
                         }
                         document.add(Chunk.NEWLINE);
                         document.addHeader("header", "header content");
-                        document.add(new Paragraph("Count: " + intersection2.size()));
+                        document.add(new Paragraph("Count: " + intersection2.size() , fontStyle_Bold));
                         /**
                          *   Creating
                          *   new Page while generating PDf
@@ -410,16 +409,17 @@ public class App extends JPanel implements helper {
                         document.add(Chunk.NEWLINE);
                         document.add(Chunk.NEWLINE);
                         document.add(Chunk.NEWLINE);
-                        document.add(new Paragraph("Cards that are being Billed, but are not Active in Card Access\n", fontStyle_Bold));
+                        Font fontStyle = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
+                        document.add(new Paragraph("Cards that are being Billed, but are not Active in Card Access\n", fontStyle));
                         //document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris\n",fontStyle_Bold));
                         document.add(Chunk.NEWLINE);
                         for (String temp : intersection1) {
-                          //  if (!temp.equals(",")) {
-                                document.add(new Paragraph(String.valueOf(temp)));
-                         //   }
+                            //  if (!temp.equals(",")) {
+                            document.add(new Paragraph(String.valueOf(temp)));
+                            //   }
                         }
                         document.add(Chunk.NEWLINE);
-                        document.add(new Paragraph("Count: " + intersection1.size()));
+                        document.add(new Paragraph("Count: " + intersection1.size() , fontStyle));
                         document.close();
                         writer.close();
 
@@ -470,7 +470,7 @@ public class App extends JPanel implements helper {
                     else if (result == JOptionPane.NO_OPTION)
                         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                     return;
-                  }
+                }
             }
         });
     }

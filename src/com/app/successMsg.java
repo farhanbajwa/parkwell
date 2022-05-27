@@ -24,7 +24,7 @@ public class successMsg {
     JProgressBar progressBar=new JProgressBar();
     successMsg() {
         createGUI();
-      //  addImage();
+        //  addImage();
         addText();
 
         Timer timer = new Timer(8000, new ActionListener(){
@@ -54,7 +54,7 @@ public class successMsg {
     }
 
     public void addText() {
-        text.setFont(new Font("arial", Font.BOLD, 30));
+        text.setFont(new Font("Montserrat", Font.BOLD, 30));
         text.setBounds(90, 200, 650, 100);
         text.setForeground(Color.YELLOW);
         frame.add(text);

@@ -2,6 +2,8 @@ package com.app;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 /***
  *  The Application that simply compare two files
@@ -14,6 +16,22 @@ import java.awt.*;
  * */
 
 public class splash extends JWindow {
+
+
+    Font  f;
+
+    {
+        try {
+            f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Bold.ttf"));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Font font = f.deriveFont(Font.PLAIN , 25f);
+
     JFrame frame;
 
     JLabel image=new JLabel(new ImageIcon("src/META-INF/imageLoader.gif"));
@@ -24,7 +42,7 @@ public class splash extends JWindow {
     splash()
     {
         createGUI();
-      //  addImage();
+        //  addImage();
         addText();
         addVersion();
         addProgressBar();
@@ -47,13 +65,15 @@ public class splash extends JWindow {
     }
     public void addText()
     {
-        text.setFont(new Font("arial",Font.BOLD,70));
+        Font font = f.deriveFont(Font.BOLD , 70f);
+        text.setFont(font);
         text.setBounds(100,120,650,50);
         text.setForeground(Color.WHITE);
         frame.add(text);
     }
     public void addVersion(){
-        version.setFont(new Font("arial",Font.BOLD,20));
+        Font font = f.deriveFont(Font.BOLD , 20f);
+        version.setFont(font);
         version.setBounds(310,190,200,40);
         version.setForeground(Color.WHITE);
         frame.add(version);
@@ -62,7 +82,7 @@ public class splash extends JWindow {
     {
         message.setBounds(250,320,200,40);//Setting the size and location of the label
         message.setForeground(Color.black);//Setting foreground Color
-        message.setFont(new Font("arial",Font.BOLD,15));//Setting font properties
+        message.setFont(new Font("Montserrat",Font.BOLD,15));//Setting font properties
         frame.add(message);//adding label to the frame
     }
     public void addProgressBar(){
@@ -82,7 +102,7 @@ public class splash extends JWindow {
             try{
                 Thread.sleep(10);//Pausing execution for 50 milliseconds
                 progressBar.setValue(i);//Setting value of Progress Bar
-              //  message.setText("LOADING "+Integer.toString(i)+"%");//Setting text of the message JLabel
+                //  message.setText("LOADING "+Integer.toString(i)+"%");//Setting text of the message JLabel
                 i++;
                 if(i==100)
                     frame.dispose();

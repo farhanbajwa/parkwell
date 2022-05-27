@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 
 /***
@@ -18,15 +20,29 @@ import java.awt.event.ActionListener;
 
 public class loader {
 
+    Font  f;
+
+    {
+        try {
+            f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Bold.ttf"));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    Font font = f.deriveFont(Font.PLAIN , 25f);
+
     JFrame frame;
     JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
     JLabel text = new JLabel(" Comparing, Please wait... ");
     JLabel message = new JLabel();
     JProgressBar progressBar=new JProgressBar();
     loader() {
-         createGUI();
-         //addImage();
-         addText();
+        createGUI();
+        //addImage();
+        addText();
         Timer timer = new Timer(6000, new ActionListener(){
             public void actionPerformed(ActionEvent evt) {
                 frame.dispose();
@@ -54,7 +70,8 @@ public class loader {
     }
 
     public void addText() {
-        text.setFont(new Font("arial", Font.BOLD, 30));
+        Font font = f.deriveFont(Font.BOLD , 30f);
+        text.setFont(font);
         text.setBounds(90, 200, 750, 100);
         text.setForeground(Color.YELLOW);
         frame.add(text);

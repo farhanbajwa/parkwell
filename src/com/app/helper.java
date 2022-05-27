@@ -1,17 +1,26 @@
 package com.app;
 
+import com.sun.javaws.Main;
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import org.apache.log4j.Logger;
 
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+
+import static com.itextpdf.text.pdf.BaseFont.createFont;
+import static com.sun.org.apache.bcel.internal.util.SecuritySupport.getResourceAsStream;
 
 /***
  *  The Application that simply compare two files
@@ -111,7 +120,10 @@ public interface helper {
      * all components ui styling
      * grid setting and insertion
      */
-    static void UiStyling() {
+    static void UiStyling() throws IOException, FontFormatException {
+
+        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Bold.ttf"));
+        Font font = f.deriveFont(Font.PLAIN , 25f);
 
         /**
          * remove the focus border from buttons
@@ -121,27 +133,31 @@ public interface helper {
         Btnfile2.setFocusPainted(false);
         Btndownload.setFocusPainted(false);
 
-         //panel.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
+        //panel.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
         // panel2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         panel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
 
         // JLabel label1 = new JLabel("Card Number for Billing");
         JLabel head = new JLabel("Parkwell File Comparison Utility");
-        head.setFont(new Font("Dialog", Font.BOLD, 45));
-       // head.setBounds(200,400,50,50);
+      // head.setFont(new Font("Montserrat", Font.BOLD, 45));
+        Font headfont = f.deriveFont(Font.BOLD , 45f);
+        head.setFont(headfont);
 
-        // JLabel label1 = new JLabel("Card Number for Billing");
+        // head.setBounds(200,400,50,50);
+
+
         JLabel label1 = new JLabel("Card Number for Billing");
-        label1.setFont(new Font("Dialog", Font.BOLD, 25));
-        // JLabel label2 = new JLabel("Access List Card Only");
+        label1.setFont(font);
         JLabel label2 = new JLabel("Access Card List ");
-        label2.setFont(new Font("Dialog", Font.BOLD, 25));
+        label2.setFont(font);
         JLabel label3 = new JLabel("Get your PDF File ");
-        label3.setFont(new Font("Dialog", Font.BOLD, 25));
+        label3.setFont(font);
+
 
         message.setText("Reset Files");
-        message.setFont(new Font(Font.DIALOG,Font.BOLD,20));
+        Font resetfont = f.deriveFont(Font.BOLD , 20f);
+        message.setFont(resetfont);
         message.setForeground(new Color(211, 211, 211));
 
         label1.setForeground(Color.WHITE);
@@ -153,23 +169,24 @@ public interface helper {
         labelpathB.setHorizontalAlignment(JLabel.LEFT);
         head.setHorizontalAlignment(JLabel.CENTER);
 
-        labelpathA.setFont(new Font("Helvetica Neue", Font.PLAIN, 19));
-        labelpathB.setFont(new Font("Helvetica Neue", Font.PLAIN, 19));
+        labelpathA.setFont(new Font("Montserrat", Font.PLAIN, 19));
+        labelpathB.setFont(new Font("Montserrat", Font.PLAIN, 19));
 
         panel.setBackground(new Color(95, 158, 160));
         panel2.setBackground(new Color(95, 158, 160));
         labelpathA.setForeground(Color.yellow);
         labelpathB.setForeground(Color.yellow);
 
-
+        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Regular.ttf"));
+        Font btnfont = regularfont.deriveFont(Font.BOLD , 25f);
         Btnfile1.setText("Browse...");
-        Btnfile1.setFont(new Font("Helvetica Neue", Font.PLAIN, 23));
+        Btnfile1.setFont(btnfont);
         Btnfile2.setText("Browse...");
-        Btnfile2.setFont(new Font("Helvetica Neue", Font.PLAIN, 23));
+        Btnfile2.setFont(btnfont);
         Btndownload.setText("Compare");
-        Btndownload.setFont(new Font("Helvetica Neue", Font.PLAIN, 23));
+        Btndownload.setFont(btnfont);
         Btnreset.setText("   Reset   ");
-        Btnreset.setFont(new Font("Helvetica Neue", Font.PLAIN, 23));
+        Btnreset.setFont(btnfont);
 
 
         /**
@@ -272,26 +289,31 @@ public interface helper {
     /**
      * Same font size and font family
      */
-    public static void font() {
-      //  UIManager.put("Button.border", BorderFactory.createLineBorder(Color.black));
-       // UIManager.put("Button.font", BorderFactory.
-      //  UIManager.put("Button.border", BorderFactory.createDashedBorder(null));
-        UIManager.put("Label.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.BOLD, 25)));
-        UIManager.put("TextField.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("Background.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("panel.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("Button.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("ComboBox.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("List.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("MenuBar.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("MenuItem.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("TextArea.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("TextPane.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("EditorPane.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("TitledBorder.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("ToolBar.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("ToolTip.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
-        UIManager.put("Tree.font", new FontUIResource(new Font("Dialog", Font.PLAIN, 25)));
+    public static void font() throws IOException, FontFormatException {
+
+        Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwell/Montserrat-Regular.ttf"));
+  //      Font f = volution.deriveFont(Font.BOLD , 48f);
+        UIManager.put("Label.font", new FontUIResource(f.deriveFont(Font.BOLD,25f)));
+
+        //  UIManager.put("Label.font", Font.createFont(Font.TRUETYPE_FONT , new File("src/com/app/Montserrat-Regular.ttf")));
+        //UIManager.put("Label.font", new FontUIResource(new Font("Montserrat", Font.BOLD, 25)));
+
+        UIManager.put("Button.font",new FontUIResource(f.deriveFont(Font.BOLD,25f)));
+        UIManager.put("TextField.font", new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("Background.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("panel.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("Button.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("ComboBox.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("List.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("MenuBar.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("MenuItem.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("TextArea.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("TextPane.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("EditorPane.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("TitledBorder.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("ToolBar.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("ToolTip.font", new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("Tree.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("JOptionPane.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
     }
 }

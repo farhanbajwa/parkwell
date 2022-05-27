@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="log4j" type="repository">
-    <properties maven-id="log4j:log4j:1.2.17" />
+    <properties maven-id="log4j:log4j:1.2.7" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.7/log4j-1.2.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
