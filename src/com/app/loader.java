@@ -56,7 +56,7 @@ public class loader {
         frame = new JFrame();
         frame.getContentPane().setLayout(null);
         frame.setUndecorated(true);
-        frame.setSize(810, 390);
+        frame.setSize(850, 390);
         frame.setLocationRelativeTo(null);
         frame.getContentPane().setBackground(new Color(95, 158, 160));
         frame.setVisible(true);
@@ -77,5 +77,3 @@ public class loader {
         frame.add(text);
     }
 }
-
-

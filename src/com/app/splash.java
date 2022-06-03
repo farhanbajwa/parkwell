@@ -43,14 +43,17 @@ public class  splash extends JWindow {
     {
         createGUI();
         //  addImage();
-        addText();
-        addVersion();
-        addProgressBar();
+        // addText();
+        //  addVersion();
+        //   addProgressBar();
         addMessage();
         runningPBar();
     }
     public void createGUI(){
         frame=new JFrame();
+        frame.setBackground(new Color(95,158,160));
+        addText();
+        addVersion();
         frame.getContentPane().setLayout(null);
         frame.setUndecorated(true);
         frame.setSize(600,400);
@@ -80,9 +83,10 @@ public class  splash extends JWindow {
     }
     public void addMessage()
     {
+        Font font = f.deriveFont(Font.BOLD , 15f);
         message.setBounds(250,320,200,40);//Setting the size and location of the label
         message.setForeground(Color.black);//Setting foreground Color
-        message.setFont(new Font("Montserrat",Font.BOLD,15));//Setting font properties
+        message.setFont(font);//Setting font properties
         frame.add(message);//adding label to the frame
     }
     public void addProgressBar(){
@@ -100,7 +104,7 @@ public class  splash extends JWindow {
         while( i<=100)
         {
             try{
-                Thread.sleep(10);//Pausing execution for 50 milliseconds
+                Thread.sleep(20);//Pausing execution for 50 milliseconds
                 progressBar.setValue(i);//Setting value of Progress Bar
                 //  message.setText("LOADING "+Integer.toString(i)+"%");//Setting text of the message JLabel
                 i++;

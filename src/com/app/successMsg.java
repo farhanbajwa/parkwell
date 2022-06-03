@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 
 /***
  *  The Application that simply compare two files
@@ -16,6 +18,19 @@ import java.awt.event.ActionListener;
  * */
 
 public class successMsg {
+
+    Font  f;
+
+    {
+        try {
+            f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
+        } catch (FontFormatException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     JFrame frame;
     JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
@@ -40,7 +55,7 @@ public class successMsg {
         frame = new JFrame();
         frame.getContentPane().setLayout(null);
         frame.setUndecorated(true);
-        frame.setSize(810, 390);
+        frame.setSize(850, 390);
         frame.setLocationRelativeTo(null);
         frame.getContentPane().setBackground(new Color(95, 158, 160));
         frame.setVisible(true);
@@ -54,7 +69,8 @@ public class successMsg {
     }
 
     public void addText() {
-        text.setFont(new Font("Montserrat", Font.BOLD, 30));
+        Font font = f.deriveFont(Font.PLAIN , 30f);
+        text.setFont(font);
         text.setBounds(90, 200, 650, 100);
         text.setForeground(Color.YELLOW);
         frame.add(text);

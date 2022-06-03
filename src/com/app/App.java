@@ -3,6 +3,7 @@ package com.app;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -39,6 +40,7 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
 
 import static java.awt.Font.createFont;
+import static javax.swing.JOptionPane.YES_OPTION;
 
 
 /***
@@ -57,6 +59,17 @@ public class App extends JPanel implements helper {
 
 
     public static void main(String[] args) throws IOException, FontFormatException {
+
+        java.awt.Font regularfont = null;
+        try {
+            regularfont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+        } catch (FontFormatException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        java.awt.Font labelfont = regularfont.deriveFont(java.awt.Font.BOLD , 20f);
+
 
         new splash();
         /**
@@ -80,7 +93,7 @@ public class App extends JPanel implements helper {
         /**
          * set and get applog text file in user home ... for logs generation
          */
-        File logfile = new File(System.getProperty("user.home")+"/parkwellMain/applog.txt");
+        File logfile = new File(System.getProperty("user.home") + "/parkwellMain/applog.txt");
 
         PatternLayout layout = new PatternLayout();
         String conversionPattern = " %-7p %d [%t] %c %x - %m%n ";
@@ -117,19 +130,32 @@ public class App extends JPanel implements helper {
             }
 
             private void FileReadActionPerformed(ActionEvent evt) {
-                System.out.println("Select a file"); logger.warn("\n Select a file ");
+                String osName = System.getProperty("os.name");
+                System.out.println(osName);
 
-                JFileChooser fileChooser = new JFileChooser();
-                fileChooser.setPreferredSize(new Dimension(600, 550));
-                FileNameExtensionFilter filter = new FileNameExtensionFilter(
-                        "Text Files(*.txt)", "txt");
-                fileChooser.setFileFilter(filter);
-                fileChooser.setCurrentDirectory(new File(System
-                        .getProperty("user.home")));
-                int result = fileChooser.showOpenDialog(frame);
-                if (result == JFileChooser.APPROVE_OPTION) {
+                if (osName.contains("Mac OS") || osName.contains("mac") || osName.contains("mac os")) {
+
+
+                    System.out.println("Select a file");
+                    logger.warn("\n Select a file ");
+
+                    System.setProperty("apple.awt.fileDialogForDirectories", "false");
+                    FileDialog d = new FileDialog(frame);
+                    // d.setMode(FileDialog.LOAD);
+                    //d.show();
+                    d.setVisible(true);
+
+                    if (d.getFile() == null) {
+                        System.out.println("cancle");
+                        return;
+                    }
+
+                    JFileChooser fileChooser = new JFileChooser(System.setProperty("apple.awt.fileDialogForDirectories", "false"));
+                    fileChooser.setPreferredSize(new Dimension(600, 550));
+
+
                     FileA.clear();
-                    File selectedFile = fileChooser.getSelectedFile();
+                    String selectedFile = d.getDirectory() + d.getFile();
                     BufferedReader br = null;
                     try {
                         br = new BufferedReader(new FileReader(selectedFile));
@@ -142,8 +168,8 @@ public class App extends JPanel implements helper {
                             line = br.readLine();
                             // System.out.print(line);
                             //null empty not added
-                            if(line != null) {
-                                if(!line.equals(" ")) {
+                            if (line != null) {
+                                if (!line.equals(" ")) {
                                     String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
                                     FileA.addAll(Collections.singleton(lineAfterTrim));
                                     System.out.println(lineAfterTrim);
@@ -152,22 +178,24 @@ public class App extends JPanel implements helper {
                                 }
                             }
                         }
-                        if(FileA.isEmpty()) {
-                            System.out.println("File One is empty"); logger.warn("\n File is empty.Please upload a valid file");
-                            JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
+                        if (FileA.isEmpty()) {
+                            System.out.println("File One is empty");
+                            logger.warn("\n File is empty.Please upload a valid file");
+                            JLabel fileEmpty = new JLabel("<html>File is empty.Please upload a valid file</html>");
+                            fileEmpty.setFont(labelfont);
+                            JOptionPane.showMessageDialog(panel, fileEmpty, "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
                         String pathA = String.valueOf(selectedFile);
                         System.out.println(pathA.length() + "length here");
-                        for(int x= 0 ; x <= pathA.length(); x++){
-                            if(x > 47){
-                                labelpathA.setText(pathA.substring(0,47)+"....");
-                            }
-                            else{
+                        for (int x = 0; x <= pathA.length(); x++) {
+                            if (x > 30) {
+                                labelpathA.setText(pathA.substring(0, 30) + "...");
+                            } else {
                                 labelpathA.setText(String.valueOf(pathA));
                             }
                         }
-                        filenameA = selectedFile.getName();
+                        filenameA = d.getFile();
                         Btnreset.setEnabled(true);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -183,7 +211,79 @@ public class App extends JPanel implements helper {
 //                if(!FileA.isEmpty()) {
 //                    Btnfile1.setEnabled(false);
 //                }
+
+
+                if (osName.contains("Windows") || osName.contains("Window") || osName.contains("windows")) {
+
+                    System.out.println("Select a file"); logger.warn("\n Select a file ");
+
+                    JFileChooser fileChooser = new JFileChooser();
+                    fileChooser.setPreferredSize(new Dimension(600, 550));
+                    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+                            "Text Files(*.txt)", "txt");
+                    fileChooser.setFileFilter(filter);
+                    fileChooser.setCurrentDirectory(new File(System
+                            .getProperty("user.home")));
+                    int result = fileChooser.showOpenDialog(frame);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        FileA.clear();
+                        File selectedFile = fileChooser.getSelectedFile();
+                        BufferedReader br = null;
+                        try {
+                            br = new BufferedReader(new FileReader(selectedFile));
+                            StringBuilder sb = new StringBuilder();
+                            //    System.out.print(sb);
+                            String line = br.readLine();
+                            while (line != null) {
+                                sb.append(line);
+                                sb.append(System.lineSeparator());
+                                line = br.readLine();
+                                // System.out.print(line);
+                                //null empty not added
+                                if(line != null) {
+                                    if(!line.equals(" ")) {
+                                        String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
+                                        FileA.addAll(Collections.singleton(lineAfterTrim));
+                                        System.out.println(lineAfterTrim);
+                                        System.out.println(FileA);
+
+                                    }
+                                }
+                            }
+                            if(FileA.isEmpty()) {
+                                System.out.println("File One is empty"); logger.warn("\n File is empty.Please upload a valid file");
+                                JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
+                                return;
+                            }
+                            String pathA = String.valueOf(selectedFile);
+                            System.out.println(pathA.length() + "length here");
+                            for(int x= 0 ; x <= pathA.length(); x++){
+                                if(x > 30){
+                                    labelpathA.setText(pathA.substring(0,30)+"...");
+                                }
+                                else{
+                                    labelpathA.setText(String.valueOf(pathA));
+                                }
+                            }
+                            filenameA = selectedFile.getName();
+                            Btnreset.setEnabled(true);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        } finally {
+                            try {
+                                br.close();
+                            } catch (IOException ex) {
+                                logger.warn(JPanel.class.getName());
+                                Logger.getLogger(JPanel.class.getName()).log(Level.ALL, null, ex);
+                            }
+                        }
+                    }
+//                if(!FileA.isEmpty()) {
+//                    Btnfile1.setEnabled(false);
+//                }
+                }
             }
+
         });
 
         /**
@@ -194,24 +294,44 @@ public class App extends JPanel implements helper {
         Btnfile2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("method call"); logger.warn("\n 2nd method call");
+                System.out.println("method call");
+                logger.warn("\n 2nd method call");
                 FileReadActionPerformed(e);
             }
 
             private void FileReadActionPerformed(ActionEvent evt) {
-                System.out.println("select 2nd file"); logger.warn("\n Select 2nd file ");
+                String osName = System.getProperty("os.name");
+                System.out.println(osName);
 
-                JFileChooser fileChooser = new JFileChooser();
-                fileChooser.setPreferredSize(new Dimension(600, 550));
-                FileNameExtensionFilter filter = new FileNameExtensionFilter(
-                        "Text Files(*.txt)", "txt");
-                fileChooser.setFileFilter(filter);
-                fileChooser.setCurrentDirectory(new File(System
-                        .getProperty("user.home")));
-                int result = fileChooser.showOpenDialog(frame);
-                if (result == JFileChooser.APPROVE_OPTION) {
+                if (osName.contains("Mac OS") || osName.contains("mac") || osName.contains("mac os")) {
+
+                    System.out.println("select 2nd file");
+                    logger.warn("\n Select 2nd file ");
+
+
+//               FileNameExtensionFilter filter = new FileNameExtensionFilter(
+//                        "Text Files(*.txt)", "txt");
+//                fileChooser.setFileFilter(filter);
+//                fileChooser.setCurrentDirectory(new File(System
+//                        .getProperty("user.home")));
+
+                    System.setProperty("apple.awt.fileDialogForDirectories", "false");
+                    FileDialog d = new FileDialog(frame);
+                    // d.setMode(FileDialog.LOAD);
+                    //d.show();
+                    d.setVisible(true);
+
+                    if (d.getFile() == null) {
+                        System.out.println("cancle");
+                        return;
+                    }
+
+                    JFileChooser fileChooser = new JFileChooser(System.setProperty("apple.awt.fileDialogForDirectories", "false"));
+                    fileChooser.setPreferredSize(new Dimension(600, 550));
+
+
                     FileB.clear();
-                    File selectedFile = fileChooser.getSelectedFile();
+                    String selectedFile = d.getDirectory() + d.getFile();
                     BufferedReader br = null;
                     try {
                         br = new BufferedReader(new FileReader(selectedFile));
@@ -222,8 +342,8 @@ public class App extends JPanel implements helper {
                             sb.append(System.lineSeparator());
                             line = br.readLine();
                             // null empty not added
-                            if(line != null) {
-                                if(!line.equals(" ")) {
+                            if (line != null) {
+                                if (!line.equals(" ")) {
                                     String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
                                     FileB.addAll(Collections.singleton(lineAfterTrim));
                                     System.out.println(lineAfterTrim);
@@ -231,22 +351,24 @@ public class App extends JPanel implements helper {
                                 }
                             }
                         }
-                        if(FileB.isEmpty()) {
-                            System.out.println(" File is empty.Please upload a valid file "); logger.warn("\n File is empty.Please upload a valid file ");
-                            JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
+                        if (FileB.isEmpty()) {
+                            System.out.println(" File is empty.Please upload a valid file ");
+                            logger.warn("\n File is empty.Please upload a valid file ");
+                            JLabel emptyfile = new JLabel("<html>File is empty.Please upload a valid file</html>");
+                            emptyfile.setFont(labelfont);
+                            JOptionPane.showMessageDialog(panel, emptyfile, "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
                         String pathB = String.valueOf(selectedFile);
                         System.out.println(pathB.length() + "length here");
-                        for(int x= 0 ; x <= pathB.length(); x++){
-                            if(x > 47){
-                                labelpathB.setText(pathB.substring(0,47)+"....");
-                            }
-                            else{
+                        for (int x = 0; x <= pathB.length(); x++) {
+                            if (x > 30) {
+                                labelpathB.setText(pathB.substring(0, 30) + "...");
+                            } else {
                                 labelpathB.setText(String.valueOf(pathB));
                             }
                         }
-                        filenameB = selectedFile.getName();
+                        filenameB = d.getFile();
                         Btnreset.setEnabled(true);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -258,10 +380,79 @@ public class App extends JPanel implements helper {
                             logger.warn("\n Select Both Files");
                         }
                     }
-                }
+
 //                if(!FileB.isEmpty()) {
 //                    Btnfile2.setEnabled(false);
 //                }
+                }
+
+                if (osName.contains("Windows") || osName.contains("Window") || osName.contains("windows")) {
+
+                    System.out.println("select 2nd file"); logger.warn("\n Select 2nd file ");
+
+                    JFileChooser fileChooser = new JFileChooser();
+                    fileChooser.setPreferredSize(new Dimension(600, 550));
+                    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+                            "Text Files(*.txt)", "txt");
+                    fileChooser.setFileFilter(filter);
+                    fileChooser.setCurrentDirectory(new File(System
+                            .getProperty("user.home")));
+                    int result = fileChooser.showOpenDialog(frame);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        FileB.clear();
+                        File selectedFile = fileChooser.getSelectedFile();
+                        BufferedReader br = null;
+                        try {
+                            br = new BufferedReader(new FileReader(selectedFile));
+                            StringBuilder sb = new StringBuilder();
+                            String line = br.readLine();
+                            while (line != null) {
+                                sb.append(line);
+                                sb.append(System.lineSeparator());
+                                line = br.readLine();
+                                // null empty not added
+                                if(line != null) {
+                                    if(!line.equals(" ")) {
+                                        String lineAfterTrim = line.replaceAll("\\s", ""); // using built in method
+                                        FileB.addAll(Collections.singleton(lineAfterTrim));
+                                        System.out.println(lineAfterTrim);
+                                        System.out.println(FileB);
+                                    }
+                                }
+                            }
+                            if(FileB.isEmpty()) {
+                                System.out.println(" File is empty.Please upload a valid file "); logger.warn("\n File is empty.Please upload a valid file ");
+                                JOptionPane.showMessageDialog(panel, "File is empty.Please upload a valid file", "Info", JOptionPane.INFORMATION_MESSAGE);
+                                return;
+                            }
+                            String pathB = String.valueOf(selectedFile);
+                            System.out.println(pathB.length() + "length here");
+                            for(int x= 0 ; x <= pathB.length(); x++){
+                                if(x > 30){
+                                    labelpathB.setText(pathB.substring(0,30)+"...");
+                                }
+                                else{
+                                    labelpathB.setText(String.valueOf(pathB));
+                                }
+                            }
+                            filenameB = selectedFile.getName();
+                            Btnreset.setEnabled(true);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        } finally {
+                            try {
+                                br.close();
+                            } catch (IOException ex) {
+                                Logger.getLogger(JPanel.class.getName()).log(Level.ALL, null, ex);
+                                logger.warn("\n Select Both Files");
+                            }
+                        }
+                    }
+//                if(!FileB.isEmpty()) {
+//                    Btnfile2.setEnabled(false);
+//                }
+
+                }
             }
         });
 
@@ -276,9 +467,10 @@ public class App extends JPanel implements helper {
                 /**
                  * special Character checking method called here
                  */
-                String timestamp = new SimpleDateFormat("dd.MM.YYYY_HH.mm.ss", Locale.US).format(new Date());
+                String timestamp = new SimpleDateFormat("MM.dd.YYYY_HH.mm.ss", Locale.US).format(new Date());
                 System.out.print("\n here" + timestamp);
                 String times = String.valueOf(timestamp);
+                String timePDF = new SimpleDateFormat("HH:mm:ss", Locale.US).format(new Date());
                 /**
                  * special Character checking method called here
                  */
@@ -287,8 +479,11 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty() && FileB.isEmpty()) {
                     System.out.print("Please upload both files for comparison \n");
                     logger.warn("\nPlease upload both files for comparison");
-                    JOptionPane.showMessageDialog(panel, "Please upload both files for comparison", "Upload files", JOptionPane.INFORMATION_MESSAGE);
-                    helper.reset();    logger.warn("\n Reset");
+                    JLabel comparisonLabel = new JLabel("<html>Please upload both files before comparison</html>");
+                    comparisonLabel.setFont(labelfont);
+                    JOptionPane.showMessageDialog(panel, comparisonLabel, "Upload files", JOptionPane.INFORMATION_MESSAGE);
+                    helper.reset();
+                    logger.warn("\n Reset");
                     System.out.print("\t" + FileA + "\t" + FileB);
                     System.out.print("Reset");
                     return;
@@ -296,14 +491,18 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty()) {
                     System.out.print("Select file card number for billing \n");
                     logger.warn("\nSelect file card number for billing ");
-                    JOptionPane.showMessageDialog(panel, "Select file card number for billing", "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    JLabel selectfile  = new JLabel("<html>Select file card number for billing</html>");
+                    selectfile.setFont(labelfont);
+                    JOptionPane.showMessageDialog(panel, selectfile , "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
                 if (FileB.isEmpty()) {
                     System.out.print("Select file access card list\n");
                     logger.warn("\n Select file access card list ");
-                    JOptionPane.showMessageDialog(panel, "Select file access card list", "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    JLabel selectfile2 = new JLabel("<html>Select file access card list</html>");
+                    selectfile2.setFont(labelfont);
+                    JOptionPane.showMessageDialog(panel, selectfile2, "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
@@ -332,10 +531,12 @@ public class App extends JPanel implements helper {
                  *
                  *   show dialog box for same file name..
                  */
-                if(filenameA.equals(filenameB)){
+                if (filenameA.equals(filenameB)) {
                     System.out.print("\nSource and target files are same.Please upload different files for comparison ");
                     logger.warn("\nSource and target files are same.Please upload different files for comparison");
-                    JOptionPane.showMessageDialog(panel, "Source and target files are same.Please upload \ndifferent files for comparison", "Same Files",  JOptionPane.INFORMATION_MESSAGE);
+                    JLabel equal  = new JLabel("<html>Source and target files are same.Please upload <br> different files for comparison</html>");
+                    equal.setFont(labelfont);
+                    JOptionPane.showMessageDialog(panel, equal , "Same Files", JOptionPane.INFORMATION_MESSAGE);
                     return;
                 }
                 /**
@@ -352,99 +553,113 @@ public class App extends JPanel implements helper {
                  * show dialog box when
                  *
                  */
-                JOptionPane.showMessageDialog(panel, "Please specify location where you want to save PDF", "Save pdf", JOptionPane.INFORMATION_MESSAGE);
-                /**
-                 * Generating PDF
-                 *
-                 */
+                JLabel loc = new JLabel("<html>Please specify location where you want to save PDF</html>");
+                loc.setFont(labelfont);
+                //   JOptionPane.showMessageDialog(panel, loc, "Save pdf", YES_OPTION);
+                Object[] buttons = {"OK"};
+                int res = JOptionPane.showOptionDialog(frame,
+                        loc,"Save pdf",
+                        JOptionPane.OK_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null, buttons , buttons[0]);
+                if (res == JOptionPane.OK_OPTION) {
 
-                /**
-                 * get dynamic path for download PDF
-                 */
-                String path = "";
-                JFileChooser j = new JFileChooser();
-                /**
-                 * setting height and width of file chooser dialog box
-                 */
-                j.setPreferredSize(new Dimension(600, 550));
-                /**
-                 * go to home directory when click on downlaad
-                 */
-                j.setCurrentDirectory(new File(System.getProperty("user.home")));
-                int result = j.showSaveDialog(frame);
-                if (result == JFileChooser.APPROVE_OPTION) {
-                    Btnreset.setEnabled(false);
-                    path = j.getSelectedFile().getPath();
                     /**
-                     *   Creating
-                     *   PDF for After Comparison FileA-FileB
+                     * Generating PDF
+                     *
                      */
-                    Document document = new Document();
-                    try {
 
-                        String date = new SimpleDateFormat("dd/MM/YYYY", Locale.US).format(new Date());
-
-                        String getPath = path + ".pdf";
-                        String setPath = path + "_" + times + ".pdf";
-                        System.out.print(setPath + "   set path  \n");
-
-                        PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(setPath));
-                        document.open();
-                        Font fontStyle_Bold = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
-                        document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris"+
-                                "\t"+"                             Printed "+ date, fontStyle_Bold));
-                        document.add(Chunk.NEWLINE);
-                        for (String temp : intersection2) {
-                            //if (!temp.equals(",")) {
-                            document.add(new Paragraph(String.valueOf(temp)));
-                            //}
-                        }
-                        document.add(Chunk.NEWLINE);
-                        document.addHeader("header", "header content");
-                        document.add(new Paragraph("Count: " + intersection2.size() , fontStyle_Bold));
+                    /**
+                     * get dynamic path for download PDF
+                     */
+                    String path = "";
+                    JFileChooser j = new JFileChooser();
+                    /**
+                     * setting height and width of file chooser dialog box
+                     */
+                    j.setPreferredSize(new Dimension(600, 550));
+                    /**
+                     * go to home directory when click on downlaad
+                     */
+                    j.setCurrentDirectory(new File(System.getProperty("user.home")));
+                    int result = j.showSaveDialog(frame);
+                    if (result == JFileChooser.APPROVE_OPTION) {
+                        Btnreset.setEnabled(false);
+                        path = j.getSelectedFile().getPath();
                         /**
                          *   Creating
-                         *   new Page while generating PDf
+                         *   PDF for After Comparison FileA-FileB
                          */
-                        document.add(Chunk.NEWLINE);
-                        document.add(Chunk.NEWLINE);
-                        document.add(Chunk.NEWLINE);
-                        Font fontStyle = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
-                        document.add(new Paragraph("Cards that are being Billed, but are not Active in Card Access\n", fontStyle));
-                        //document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris\n",fontStyle_Bold));
-                        document.add(Chunk.NEWLINE);
-                        for (String temp : intersection1) {
-                            //  if (!temp.equals(",")) {
-                            document.add(new Paragraph(String.valueOf(temp)));
-                            //   }
+                        Document document = new Document();
+                        try {
+
+                            String date = new SimpleDateFormat("MM/dd/YYYY", Locale.US).format(new Date());
+
+                            String getPath = path + ".pdf";
+                            String setPath = path + "_" + times + ".pdf";
+                            System.out.print(setPath + "   set path  \n");
+
+                            PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(setPath));
+                            document.open();
+                            Font fontStyle_Bold = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
+                            document.add(new Paragraph("\t" + "\t" + "\t" + "\t"  + "\t" +"\t" +"                                           " +
+                                    "                                                         " +
+                                    "                              Printed " + date + " - " + timePDF ,fontStyle_Bold));
+                            document.add(Chunk.NEWLINE);
+                            document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris", fontStyle_Bold));
+                            document.add(Chunk.NEWLINE);
+                            for (String temp : intersection2) {
+                                //if (!temp.equals(",")) {
+                                document.add(new Paragraph(String.valueOf(temp)));
+                                //}
+                            }
+                            document.add(Chunk.NEWLINE);
+                            document.addHeader("header", "header content");
+                            document.add(new Paragraph("Count: " + intersection2.size(), fontStyle_Bold));
+                            /**
+                             *   Creating
+                             *   new Page while generating PDf
+                             */
+                            document.add(Chunk.NEWLINE);
+                            document.add(Chunk.NEWLINE);
+                            document.add(Chunk.NEWLINE);
+                            Font fontStyle = FontFactory.getFont("Montserrat", 10f, Font.BOLD);
+                            document.add(new Paragraph("Cards that are being Billed, but are not Active in Card Access\n", fontStyle));
+                            //document.add(new Paragraph("Cards that are Active in Card Access, but are not being Billed in Paris\n",fontStyle_Bold));
+                            document.add(Chunk.NEWLINE);
+                            for (String temp : intersection1) {
+                                //  if (!temp.equals(",")) {
+                                document.add(new Paragraph(String.valueOf(temp)));
+                                //   }
+                            }
+                            document.add(Chunk.NEWLINE);
+                            document.add(new Paragraph("Count: " + intersection1.size(), fontStyle));
+                            document.close();
+                            writer.close();
+
+                            /**
+                             *  Re-set to empty
+                             *
+                             */
+                            helper.reset();
+
+                            /**
+                             *  Show loader or show success message
+                             *
+                             */
+
+                            new successMsg();
+                            new loader();
+
+                        } catch (DocumentException error) {
+                            error.printStackTrace();
+                        } catch (FileNotFoundException error) {
+                            error.printStackTrace();
                         }
-                        document.add(Chunk.NEWLINE);
-                        document.add(new Paragraph("Count: " + intersection1.size() , fontStyle));
-                        document.close();
-                        writer.close();
-
-                        /**
-                         *  Re-set to empty
-                         *
-                         */
-                        helper.reset();
-
-                        /**
-                         *  Show loader or show success message
-                         *
-                         */
-
-                        new successMsg();
-                        new loader();
-
-                    } catch (DocumentException error) {
-                        error.printStackTrace();
-                    } catch (FileNotFoundException error) {
-                        error.printStackTrace();
+                    } else if (result == JFileChooser.CANCEL_OPTION) {
+                        System.out.print("\n cancle");
+                        logger.warn("\n cancle");
+                        return;
                     }
-                } else if (result == JFileChooser.CANCEL_OPTION) {
-                    System.out.print("\n cancle");    logger.warn("\n cancle");
-                    return;
                 }
             }
         });
@@ -456,18 +671,27 @@ public class App extends JPanel implements helper {
         Btnreset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                java.awt.Font regularfont = null;
+                try {
+                    regularfont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+                } catch (FontFormatException ex) {
+                    ex.printStackTrace();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+                java.awt.Font labelfont = regularfont.deriveFont(java.awt.Font.BOLD , 19f);
 
-                JLabel messageConf = new JLabel("Are you sure you want to reset all fields ? " );
+                JLabel messageConf = new JLabel("<html>Are you sure you want to reset all fields ? </html>");
+                messageConf.setFont(labelfont);
 
                 if (!(FileA.isEmpty()) || !(FileB.isEmpty())) {
                     int result = JOptionPane.showConfirmDialog(
-                            frame, messageConf , "Reset Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE);
-                    if (result == JOptionPane.YES_OPTION) {
+                            frame, messageConf, "Reset Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.ERROR_MESSAGE);
+                    if (result == YES_OPTION) {
                         helper.reset();
                         Btnreset.setEnabled(false);
                         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                    else if (result == JOptionPane.NO_OPTION)
+                    } else if (result == JOptionPane.NO_OPTION)
                         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
                     return;
                 }

@@ -1,7 +1,5 @@
 package com.app;
 
-import com.sun.javaws.Main;
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.Match;
 import org.apache.log4j.Logger;
 
 import javax.swing.*;
@@ -9,18 +7,12 @@ import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Properties;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-
-import static com.itextpdf.text.pdf.BaseFont.createFont;
-import static com.sun.org.apache.bcel.internal.util.SecuritySupport.getResourceAsStream;
 
 /***
  *  The Application that simply compare two files
@@ -140,7 +132,7 @@ public interface helper {
 
         // JLabel label1 = new JLabel("Card Number for Billing");
         JLabel head = new JLabel("Parkwell File Comparison Utility");
-      // head.setFont(new Font("Montserrat", Font.BOLD, 45));
+        // head.setFont(new Font("Montserrat", Font.BOLD, 45));
         Font headfont = f.deriveFont(Font.BOLD , 45f);
         head.setFont(headfont);
 
@@ -169,15 +161,18 @@ public interface helper {
         labelpathB.setHorizontalAlignment(JLabel.LEFT);
         head.setHorizontalAlignment(JLabel.CENTER);
 
-        labelpathA.setFont(new Font("Montserrat", Font.PLAIN, 19));
-        labelpathB.setFont(new Font("Montserrat", Font.PLAIN, 19));
+        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+        Font labelfont = regularfont.deriveFont(Font.BOLD , 19f);
+
+        labelpathA.setFont(labelfont);
+        labelpathB.setFont(labelfont);
 
         panel.setBackground(new Color(95, 158, 160));
         panel2.setBackground(new Color(95, 158, 160));
         labelpathA.setForeground(Color.yellow);
         labelpathB.setForeground(Color.yellow);
 
-        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+
         Font btnfont = regularfont.deriveFont(Font.BOLD , 25f);
         Btnfile1.setText("Browse...");
         Btnfile1.setFont(btnfont);
@@ -292,7 +287,7 @@ public interface helper {
     public static void font() throws IOException, FontFormatException {
 
         Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
-  //      Font f = volution.deriveFont(Font.BOLD , 48f);
+        //      Font f = volution.deriveFont(Font.BOLD , 48f);
         UIManager.put("Label.font", new FontUIResource(f.deriveFont(Font.BOLD,25f)));
 
         //  UIManager.put("Label.font", Font.createFont(Font.TRUETYPE_FONT , new File("src/com/app/Montserrat-Regular.ttf")));
@@ -314,6 +309,6 @@ public interface helper {
         UIManager.put("ToolBar.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
         UIManager.put("ToolTip.font", new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
         UIManager.put("Tree.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
-        UIManager.put("JOptionPane.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
+        UIManager.put("JOptionPane.font",  new FontUIResource(f.deriveFont(Font.PLAIN,35f)));
     }
 }
