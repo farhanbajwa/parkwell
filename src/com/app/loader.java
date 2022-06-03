@@ -25,23 +25,15 @@ public class loader {
     {
         try {
             f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
     }
 
-    Font font = f.deriveFont(Font.PLAIN , 25f);
-
     JFrame frame;
-    JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
     JLabel text = new JLabel(" Comparing, Please wait... ");
-    JLabel message = new JLabel();
-    JProgressBar progressBar=new JProgressBar();
     loader() {
         createGUI();
-        //addImage();
         addText();
         Timer timer = new Timer(6000, new ActionListener(){
             public void actionPerformed(ActionEvent evt) {
@@ -63,11 +55,6 @@ public class loader {
 
     }
 
-    public void addImage() {
-        image.setSize(600, 500);
-        image.setBounds(150, 300, 650, 100);
-        frame.add(image);
-    }
 
     public void addText() {
         Font font = f.deriveFont(Font.BOLD , 30f);

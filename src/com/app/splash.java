@@ -23,18 +23,14 @@ public class  splash extends JWindow {
     {
         try {
             f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
     }
 
-    Font font = f.deriveFont(Font.PLAIN , 25f);
 
     JFrame frame;
 
-    JLabel image=new JLabel(new ImageIcon("src/META-INF/imageLoader.gif"));
     JLabel text=new JLabel("PARKWELL");
     JLabel version=new JLabel(" V 1.0  -  2022 ");
     JProgressBar progressBar=new JProgressBar();
@@ -42,10 +38,6 @@ public class  splash extends JWindow {
     splash()
     {
         createGUI();
-        //  addImage();
-        // addText();
-        //  addVersion();
-        //   addProgressBar();
         addMessage();
         runningPBar();
     }
@@ -62,10 +54,7 @@ public class  splash extends JWindow {
         frame.setVisible(true);
 
     }
-    public void addImage(){
-        image.setSize(600,200);
-        frame.add(image);
-    }
+
     public void addText()
     {
         Font font = f.deriveFont(Font.BOLD , 70f);
@@ -89,17 +78,9 @@ public class  splash extends JWindow {
         message.setFont(font);//Setting font properties
         frame.add(message);//adding label to the frame
     }
-    public void addProgressBar(){
-        progressBar.setBounds(100,280,400,30);
-        progressBar.setBorderPainted(true);
-        progressBar.setStringPainted(true);
-        progressBar.setBackground(Color.WHITE);
-        progressBar.setForeground(Color.yellow);
-        progressBar.setValue(0);
-        frame.add(progressBar);
-    }
+
     public void runningPBar(){
-        int i=0;//Creating an integer variable and intializing it to 0
+        int i=0;//Creating an integer variable and initializing it to 0
 
         while( i<=100)
         {

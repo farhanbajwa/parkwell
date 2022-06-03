@@ -23,13 +23,8 @@ import java.util.regex.Pattern;
  * @since   2022-04-20
  *
  * */
-public interface helper {
+public class helper {
 
-    /**
-     * this pannel used for display the
-     * any message or any information to user
-     */
-    final JPanel panelError = new JPanel();
 
     /**
      * Set used here for hold the data of files
@@ -78,8 +73,6 @@ public interface helper {
             if (specialCharactersString.contains(listA.get(i))) {
                 System.out.print("\n File 1 (card number for billing) contains special characters or strings \"" + listA.get(i) + "\" \n");
                 logger.warn("\n File 1 (card number for billing) contains special character  or strings \"" + listA.get(i) + "\" ");
-                //    InfoMsgForSpecialCh(listA.get(i));
-                //    return;
             }
             Pattern p =  Pattern.compile(matchspecialCharacterswithStrings);
             Matcher m  = p.matcher(listA.get(i));
@@ -96,8 +89,6 @@ public interface helper {
             if (specialCharactersString.contains(listB.get(i))) {
                 System.out.print("\n File 2 (Access Card List) contains special character \"" + listB.get(i) + "\" \n");
                 logger.warn("\n File 2 (Access Card List) contains special character \"" + listB.get(i) + "\" ");
-                // InfoMsgForSpecialCh(listB.get(i));
-                //   return;
             }
             Pattern p =  Pattern.compile(matchspecialCharacterswithStrings);
             Matcher m =  p.matcher(listB.get(i));
@@ -109,7 +100,7 @@ public interface helper {
     }
 
     /**
-     * all components ui styling
+     * all components' ui styling
      * grid setting and insertion
      */
     static void UiStyling() throws IOException, FontFormatException {
@@ -117,24 +108,21 @@ public interface helper {
         Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
         Font font = f.deriveFont(Font.PLAIN , 25f);
 
-        /**
-         * remove the focus border from buttons
+        /*
+          remove the focus border from buttons
          */
         Btnreset.setFocusPainted(false);
         Btnfile1.setFocusPainted(false);
         Btnfile2.setFocusPainted(false);
         Btndownload.setFocusPainted(false);
 
-        //panel.setBorder(BorderFactory.createLineBorder(Color.YELLOW));
-        // panel2.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         panel.setLayout(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
 
-        // JLabel label1 = new JLabel("Card Number for Billing");
         JLabel head = new JLabel("Parkwell File Comparison Utility");
-        // head.setFont(new Font("Montserrat", Font.BOLD, 45));
-        Font headfont = f.deriveFont(Font.BOLD , 45f);
-        head.setFont(headfont);
+
+        Font headFont = f.deriveFont(Font.BOLD , 45f);
+        head.setFont(headFont);
 
         // head.setBounds(200,400,50,50);
 
@@ -148,8 +136,8 @@ public interface helper {
 
 
         message.setText("Reset Files");
-        Font resetfont = f.deriveFont(Font.BOLD , 20f);
-        message.setFont(resetfont);
+        Font resetFont = f.deriveFont(Font.BOLD , 20f);
+        message.setFont(resetFont);
         message.setForeground(new Color(211, 211, 211));
 
         label1.setForeground(Color.WHITE);
@@ -161,11 +149,11 @@ public interface helper {
         labelpathB.setHorizontalAlignment(JLabel.LEFT);
         head.setHorizontalAlignment(JLabel.CENTER);
 
-        Font  regularfont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
-        Font labelfont = regularfont.deriveFont(Font.BOLD , 19f);
+        Font  regularFont = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+        Font labelFont = regularFont.deriveFont(Font.BOLD , 19f);
 
-        labelpathA.setFont(labelfont);
-        labelpathB.setFont(labelfont);
+        labelpathA.setFont(labelFont);
+        labelpathB.setFont(labelFont);
 
         panel.setBackground(new Color(95, 158, 160));
         panel2.setBackground(new Color(95, 158, 160));
@@ -173,27 +161,27 @@ public interface helper {
         labelpathB.setForeground(Color.yellow);
 
 
-        Font btnfont = regularfont.deriveFont(Font.BOLD , 25f);
+        Font btnFont = regularFont.deriveFont(Font.BOLD , 25f);
         Btnfile1.setText("Browse...");
-        Btnfile1.setFont(btnfont);
+        Btnfile1.setFont(btnFont);
         Btnfile2.setText("Browse...");
-        Btnfile2.setFont(btnfont);
+        Btnfile2.setFont(btnFont);
         Btndownload.setText("Compare");
-        Btndownload.setFont(btnfont);
+        Btndownload.setFont(btnFont);
         Btnreset.setText("   Reset   ");
-        Btnreset.setFont(btnfont);
+        Btnreset.setFont(btnFont);
 
 
-        /**
-         * setting lable buttons and
-         * heigth and width using grid
+        /*
+          setting label buttons and
+          height and width using grid
          */
         gbc.ipadx = 90;
 
         gbc.fill = GridBagConstraints.WEST;
         gbc.gridx = 1;
         gbc.gridy = 1;
-        // gbc.weightx = 130;
+
         gbc.insets = new Insets(20, 0, 10, 0);
         gbc.anchor = GridBagConstraints.EAST;
         panel2.add(head,gbc);
@@ -257,7 +245,7 @@ public interface helper {
 
     /**
      * Show Special Character Message for frontend
-     * clear files enable btn's
+     * clear files enable button
      */
     static void InfoMsgForSpecialCh(String str) {
         JOptionPane.showMessageDialog(panel, "\n File 1 contains special character \"" + str + "\" ", "INFO", JOptionPane.INFORMATION_MESSAGE);
@@ -287,12 +275,7 @@ public interface helper {
     public static void font() throws IOException, FontFormatException {
 
         Font  f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
-        //      Font f = volution.deriveFont(Font.BOLD , 48f);
         UIManager.put("Label.font", new FontUIResource(f.deriveFont(Font.BOLD,25f)));
-
-        //  UIManager.put("Label.font", Font.createFont(Font.TRUETYPE_FONT , new File("src/com/app/Montserrat-Regular.ttf")));
-        //UIManager.put("Label.font", new FontUIResource(new Font("Montserrat", Font.BOLD, 25)));
-
         UIManager.put("Button.font",new FontUIResource(f.deriveFont(Font.BOLD,25f)));
         UIManager.put("TextField.font", new FontUIResource(f.deriveFont(Font.PLAIN,25f)));
         UIManager.put("Background.font",  new FontUIResource(f.deriveFont(Font.PLAIN,25f)));

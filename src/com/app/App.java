@@ -3,7 +3,6 @@ package com.app;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +15,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.Set;
 
 import java.io.FileNotFoundException;
@@ -39,7 +39,6 @@ import org.apache.log4j.PatternLayout;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
 
-import static java.awt.Font.createFont;
 import static javax.swing.JOptionPane.YES_OPTION;
 
 
@@ -52,7 +51,8 @@ import static javax.swing.JOptionPane.YES_OPTION;
  * @since   2022-04-20
  *
  * */
-public class App extends JPanel implements helper {
+
+public class App extends helper   {
 
     static String filenameA = null;
     static String filenameB = null;
@@ -60,38 +60,37 @@ public class App extends JPanel implements helper {
 
     public static void main(String[] args) throws IOException, FontFormatException {
 
-        java.awt.Font regularfont = null;
+        java.awt.Font regularFont = null;
         try {
-            regularfont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
-        } catch (FontFormatException ex) {
-            ex.printStackTrace();
-        } catch (IOException ex) {
+            regularFont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
+        } catch (FontFormatException | IOException ex) {
             ex.printStackTrace();
         }
-        java.awt.Font labelfont = regularfont.deriveFont(java.awt.Font.BOLD , 20f);
-
+        java.awt.Font labelFont = Objects.requireNonNull(regularFont).deriveFont(java.awt.Font.BOLD , 20f);
+        java.awt.Font labelFontReset = regularFont.deriveFont(java.awt.Font.BOLD , 19f);
 
         new splash();
-        /**
-         * Set Same Font Size for Lables Buttons Text Area
-         * Teaxt Fields And Pannels
-         *
+
+        /*
+          Set Same Font Size for Labels' Buttons Text Area
+          Text Fields And Panels
+
          */
         helper.font();
 
-        /**
-         * UiStyling contains all lables buttons
-         * panel frame
-         * and text fields alignment
+        /*
+          UiStyling contains all labels buttons
+          panel frame
+          and text fields alignment
          */
         helper.UiStyling();
 
-        /**
-         *  creates pattern layout
+        /*
+           creates pattern layout
          */
 
-        /**
-         * set and get applog text file in user home ... for logs generation
+        /*
+          set and get app log text file in user home ... for logs generation
          */
         File logfile = new File(System.getProperty("user.home") + "/parkwellMain/applog.txt");
 
@@ -117,9 +116,9 @@ public class App extends JPanel implements helper {
         rootLogger.addAppender(fileAppender);
 
 
-        /**
-         * btnfile1 perform an action listener
-         * on click of file1 Button
+        /*
+          btn-file1 perform an action listener
+          on click of file1 Button
          */
         Btnfile1.addActionListener(new ActionListener() {
             @Override
@@ -129,7 +128,7 @@ public class App extends JPanel implements helper {
                 FileReadActionPerformed(e);
             }
 
-            private void FileReadActionPerformed(ActionEvent evt) {
+            private void FileReadActionPerformed(ActionEvent ignoredEvt) {
                 String osName = System.getProperty("os.name");
                 System.out.println(osName);
 
@@ -141,12 +140,10 @@ public class App extends JPanel implements helper {
 
                     System.setProperty("apple.awt.fileDialogForDirectories", "false");
                     FileDialog d = new FileDialog(frame);
-                    // d.setMode(FileDialog.LOAD);
-                    //d.show();
                     d.setVisible(true);
 
                     if (d.getFile() == null) {
-                        System.out.println("cancle");
+                        System.out.println("cancel");
                         return;
                     }
 
@@ -182,17 +179,16 @@ public class App extends JPanel implements helper {
                             System.out.println("File One is empty");
                             logger.warn("\n File is empty.Please upload a valid file");
                             JLabel fileEmpty = new JLabel("<html>File is empty.Please upload a valid file</html>");
-                            fileEmpty.setFont(labelfont);
+                            fileEmpty.setFont(labelFont);
                             JOptionPane.showMessageDialog(panel, fileEmpty, "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
-                        String pathA = String.valueOf(selectedFile);
-                        System.out.println(pathA.length() + "length here");
-                        for (int x = 0; x <= pathA.length(); x++) {
+                        System.out.println(selectedFile.length() + "length here");
+                        for (int x = 0; x <= selectedFile.length(); x++) {
                             if (x > 30) {
-                                labelpathA.setText(pathA.substring(0, 30) + "...");
+                                labelpathA.setText(selectedFile.substring(0, 30) + "...");
                             } else {
-                                labelpathA.setText(String.valueOf(pathA));
+                                labelpathA.setText(selectedFile);
                             }
                         }
                         filenameA = d.getFile();
@@ -208,9 +204,7 @@ public class App extends JPanel implements helper {
                         }
                     }
                 }
-//                if(!FileA.isEmpty()) {
-//                    Btnfile1.setEnabled(false);
-//                }
+
 
 
                 if (osName.contains("Windows") || osName.contains("Window") || osName.contains("windows")) {
@@ -262,7 +256,7 @@ public class App extends JPanel implements helper {
                                     labelpathA.setText(pathA.substring(0,30)+"...");
                                 }
                                 else{
-                                    labelpathA.setText(String.valueOf(pathA));
+                                    labelpathA.setText(pathA);
                                 }
                             }
                             filenameA = selectedFile.getName();
@@ -278,17 +272,15 @@ public class App extends JPanel implements helper {
                             }
                         }
                     }
-//                if(!FileA.isEmpty()) {
-//                    Btnfile1.setEnabled(false);
-//                }
+
                 }
             }
 
         });
 
-        /**
-         * btnfile2 perform an action listener
-         * on click of file2 Button
+        /*
+          btn-file2 perform an action listener
+          on click of file2 Button
          */
 
         Btnfile2.addActionListener(new ActionListener() {
@@ -299,7 +291,7 @@ public class App extends JPanel implements helper {
                 FileReadActionPerformed(e);
             }
 
-            private void FileReadActionPerformed(ActionEvent evt) {
+            private void FileReadActionPerformed(ActionEvent ignoredEvt) {
                 String osName = System.getProperty("os.name");
                 System.out.println(osName);
 
@@ -309,20 +301,12 @@ public class App extends JPanel implements helper {
                     logger.warn("\n Select 2nd file ");
 
 
-//               FileNameExtensionFilter filter = new FileNameExtensionFilter(
-//                        "Text Files(*.txt)", "txt");
-//                fileChooser.setFileFilter(filter);
-//                fileChooser.setCurrentDirectory(new File(System
-//                        .getProperty("user.home")));
-
                     System.setProperty("apple.awt.fileDialogForDirectories", "false");
                     FileDialog d = new FileDialog(frame);
-                    // d.setMode(FileDialog.LOAD);
-                    //d.show();
                     d.setVisible(true);
 
                     if (d.getFile() == null) {
-                        System.out.println("cancle");
+                        System.out.println("cancel");
                         return;
                     }
 
@@ -354,18 +338,17 @@ public class App extends JPanel implements helper {
                         if (FileB.isEmpty()) {
                             System.out.println(" File is empty.Please upload a valid file ");
                             logger.warn("\n File is empty.Please upload a valid file ");
-                            JLabel emptyfile = new JLabel("<html>File is empty.Please upload a valid file</html>");
-                            emptyfile.setFont(labelfont);
-                            JOptionPane.showMessageDialog(panel, emptyfile, "Info", JOptionPane.INFORMATION_MESSAGE);
+                            JLabel emptyFile = new JLabel("<html>File is empty.Please upload a valid file</html>");
+                            emptyFile.setFont(labelFont);
+                            JOptionPane.showMessageDialog(panel, emptyFile, "Info", JOptionPane.INFORMATION_MESSAGE);
                             return;
                         }
-                        String pathB = String.valueOf(selectedFile);
-                        System.out.println(pathB.length() + "length here");
-                        for (int x = 0; x <= pathB.length(); x++) {
+                        System.out.println(selectedFile.length() + "length here");
+                        for (int x = 0; x <= selectedFile.length(); x++) {
                             if (x > 30) {
-                                labelpathB.setText(pathB.substring(0, 30) + "...");
+                                labelpathB.setText(selectedFile.substring(0, 30) + "...");
                             } else {
-                                labelpathB.setText(String.valueOf(pathB));
+                                labelpathB.setText(selectedFile);
                             }
                         }
                         filenameB = d.getFile();
@@ -381,9 +364,6 @@ public class App extends JPanel implements helper {
                         }
                     }
 
-//                if(!FileB.isEmpty()) {
-//                    Btnfile2.setEnabled(false);
-//                }
                 }
 
                 if (osName.contains("Windows") || osName.contains("Window") || osName.contains("windows")) {
@@ -432,7 +412,7 @@ public class App extends JPanel implements helper {
                                     labelpathB.setText(pathB.substring(0,30)+"...");
                                 }
                                 else{
-                                    labelpathB.setText(String.valueOf(pathB));
+                                    labelpathB.setText(pathB);
                                 }
                             }
                             filenameB = selectedFile.getName();
@@ -448,31 +428,27 @@ public class App extends JPanel implements helper {
                             }
                         }
                     }
-//                if(!FileB.isEmpty()) {
-//                    Btnfile2.setEnabled(false);
-//                }
 
                 }
             }
         });
 
-        /**
-         * btndownload perform an action listener
-         * on click of download Button
+        /*
+          btn-download perform an action listener
+          on click of download Button
          */
         Btndownload.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                /**
-                 * special Character checking method called here
+                /*
+                  special Character checking method called here
                  */
-                String timestamp = new SimpleDateFormat("MM.dd.YYYY_HH.mm.ss", Locale.US).format(new Date());
+                String timestamp = new SimpleDateFormat("MM.dd.yyyy_HH.mm.ss", Locale.US).format(new Date());
                 System.out.print("\n here" + timestamp);
-                String times = String.valueOf(timestamp);
                 String timePDF = new SimpleDateFormat("HH:mm:ss", Locale.US).format(new Date());
-                /**
-                 * special Character checking method called here
+                /*
+                  special Character checking method called here
                  */
                 helper.checkingforSpecialCharacter();
 
@@ -480,7 +456,7 @@ public class App extends JPanel implements helper {
                     System.out.print("Please upload both files for comparison \n");
                     logger.warn("\nPlease upload both files for comparison");
                     JLabel comparisonLabel = new JLabel("<html>Please upload both files before comparison</html>");
-                    comparisonLabel.setFont(labelfont);
+                    comparisonLabel.setFont(labelFont);
                     JOptionPane.showMessageDialog(panel, comparisonLabel, "Upload files", JOptionPane.INFORMATION_MESSAGE);
                     helper.reset();
                     logger.warn("\n Reset");
@@ -491,18 +467,18 @@ public class App extends JPanel implements helper {
                 if (FileA.isEmpty()) {
                     System.out.print("Select file card number for billing \n");
                     logger.warn("\nSelect file card number for billing ");
-                    JLabel selectfile  = new JLabel("<html>Select file card number for billing</html>");
-                    selectfile.setFont(labelfont);
-                    JOptionPane.showMessageDialog(panel, selectfile , "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    JLabel selectFile  = new JLabel("<html>Select file card number for billing</html>");
+                    selectFile.setFont(labelFont);
+                    JOptionPane.showMessageDialog(panel, selectFile  , "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
                 if (FileB.isEmpty()) {
                     System.out.print("Select file access card list\n");
                     logger.warn("\n Select file access card list ");
-                    JLabel selectfile2 = new JLabel("<html>Select file access card list</html>");
-                    selectfile2.setFont(labelfont);
-                    JOptionPane.showMessageDialog(panel, selectfile2, "Select file", JOptionPane.INFORMATION_MESSAGE);
+                    JLabel selectFile2 = new JLabel("<html>Select file access card list</html>");
+                    selectFile2.setFont(labelFont);
+                    JOptionPane.showMessageDialog(panel, selectFile2, "Select file", JOptionPane.INFORMATION_MESSAGE);
                     System.out.print("\t" + FileA + "\t" + FileB);
                     return;
                 }
@@ -517,45 +493,38 @@ public class App extends JPanel implements helper {
                 System.out.print("\nIntersection of the two Set b-a");
                 System.out.println("\n" + intersection2);
 
-                /***
-                 *
-                 * removing empty value from
-                 * intersectionOne and intersectionTwo
-                 *
+                /*
+
+                 removing empty value from
+                 intersectionOne and intersectionTwo
+
                  */
                 intersection1.removeIf(x -> x.isEmpty());
                 intersection2.removeIf(x -> x.isEmpty());
                 System.out.print("\n+1+\n" + intersection1 + "\n+2+\n" + intersection2);
 
-                /**
-                 *
-                 *   show dialog box for same file name..
+                /*
+
+                    show dialog box for same file name.
                  */
                 if (filenameA.equals(filenameB)) {
                     System.out.print("\nSource and target files are same.Please upload different files for comparison ");
                     logger.warn("\nSource and target files are same.Please upload different files for comparison");
                     JLabel equal  = new JLabel("<html>Source and target files are same.Please upload <br> different files for comparison</html>");
-                    equal.setFont(labelfont);
+                    equal.setFont(labelFont);
                     JOptionPane.showMessageDialog(panel, equal , "Same Files", JOptionPane.INFORMATION_MESSAGE);
                     return;
                 }
-                /**
-                 *
-                 *   show dialog box
+                /*
+
+                    show dialog box
                  */
-//                if(FileA.c){
-//                    System.out.print("\n can not create pdf ");
-//                    logger.warn("\n can not create pdf");
-//                    JOptionPane.showMessageDialog(panel, "\n can not create pdf", "INFO",  JOptionPane.INFORMATION_MESSAGE);
-//                    return;
-//                }
-                /**
-                 * show dialog box when
-                 *
+/*
+                  show dialog box when
+
                  */
                 JLabel loc = new JLabel("<html>Please specify location where you want to save PDF</html>");
-                loc.setFont(labelfont);
-                //   JOptionPane.showMessageDialog(panel, loc, "Save pdf", YES_OPTION);
+                loc.setFont(labelFont);
                 Object[] buttons = {"OK"};
                 int res = JOptionPane.showOptionDialog(frame,
                         loc,"Save pdf",
@@ -563,39 +532,37 @@ public class App extends JPanel implements helper {
                         JOptionPane.PLAIN_MESSAGE, null, buttons , buttons[0]);
                 if (res == JOptionPane.OK_OPTION) {
 
-                    /**
-                     * Generating PDF
-                     *
+                    /*
+                      Generating PDF
+
                      */
 
-                    /**
-                     * get dynamic path for download PDF
+                    /*
+                      get dynamic path for download PDF
                      */
-                    String path = "";
                     JFileChooser j = new JFileChooser();
-                    /**
-                     * setting height and width of file chooser dialog box
+                    /*
+                      setting height and width of file chooser dialog box
                      */
                     j.setPreferredSize(new Dimension(600, 550));
-                    /**
-                     * go to home directory when click on downlaad
+                    /*
+                      go home directory when click on download
                      */
                     j.setCurrentDirectory(new File(System.getProperty("user.home")));
                     int result = j.showSaveDialog(frame);
                     if (result == JFileChooser.APPROVE_OPTION) {
                         Btnreset.setEnabled(false);
-                        path = j.getSelectedFile().getPath();
-                        /**
-                         *   Creating
-                         *   PDF for After Comparison FileA-FileB
+                        String path = j.getSelectedFile().getPath();
+                        /*
+                            Creating
+                            PDF for After Comparison FileA-FileB
                          */
                         Document document = new Document();
                         try {
 
-                            String date = new SimpleDateFormat("MM/dd/YYYY", Locale.US).format(new Date());
+                            String date = new SimpleDateFormat("MM/dd/yyyy", Locale.US).format(new Date());
 
-                            String getPath = path + ".pdf";
-                            String setPath = path + "_" + times + ".pdf";
+                            String setPath = path + "_" + timestamp + ".pdf";
                             System.out.print(setPath + "   set path  \n");
 
                             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(setPath));
@@ -615,9 +582,9 @@ public class App extends JPanel implements helper {
                             document.add(Chunk.NEWLINE);
                             document.addHeader("header", "header content");
                             document.add(new Paragraph("Count: " + intersection2.size(), fontStyle_Bold));
-                            /**
-                             *   Creating
-                             *   new Page while generating PDf
+                            /*
+                                Creating
+                                new Page while generating PDf
                              */
                             document.add(Chunk.NEWLINE);
                             document.add(Chunk.NEWLINE);
@@ -636,53 +603,42 @@ public class App extends JPanel implements helper {
                             document.close();
                             writer.close();
 
-                            /**
-                             *  Re-set to empty
-                             *
+                            /*
+                               Re-set to empty
+
                              */
                             helper.reset();
 
-                            /**
-                             *  Show loader or show success message
-                             *
+                            /*
+                               Show loader or show success message
+
                              */
 
                             new successMsg();
                             new loader();
 
-                        } catch (DocumentException error) {
-                            error.printStackTrace();
-                        } catch (FileNotFoundException error) {
+                        } catch (DocumentException | FileNotFoundException error) {
                             error.printStackTrace();
                         }
                     } else if (result == JFileChooser.CANCEL_OPTION) {
-                        System.out.print("\n cancle");
-                        logger.warn("\n cancle");
+                        System.out.print("\n Cancel");
+                        logger.warn("\n cancel");
                         return;
                     }
                 }
             }
         });
 
-        /**
-         * Btnreset perform an action listener
-         * on click of reset
+        /*
+          Btn-reset perform an action listener
+          on click of reset
          */
         Btnreset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                java.awt.Font regularfont = null;
-                try {
-                    regularfont = java.awt.Font.createFont(java.awt.Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Regular.ttf"));
-                } catch (FontFormatException ex) {
-                    ex.printStackTrace();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-                java.awt.Font labelfont = regularfont.deriveFont(java.awt.Font.BOLD , 19f);
 
                 JLabel messageConf = new JLabel("<html>Are you sure you want to reset all fields ? </html>");
-                messageConf.setFont(labelfont);
+                messageConf.setFont(labelFontReset);
 
                 if (!(FileA.isEmpty()) || !(FileB.isEmpty())) {
                     int result = JOptionPane.showConfirmDialog(
@@ -693,7 +649,6 @@ public class App extends JPanel implements helper {
                         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     } else if (result == JOptionPane.NO_OPTION)
                         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-                    return;
                 }
             }
         });

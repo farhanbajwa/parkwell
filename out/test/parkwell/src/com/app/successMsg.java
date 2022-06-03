@@ -24,22 +24,18 @@ public class successMsg {
     {
         try {
             f = Font.createFont(Font.TRUETYPE_FONT, new File(System.getProperty("user.home")+"/parkwellMain/Montserrat-Bold.ttf"));
-        } catch (FontFormatException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (FontFormatException | IOException e) {
             e.printStackTrace();
         }
     }
 
 
     JFrame frame;
-    JLabel image = new JLabel(new ImageIcon("src/com/app/imageLoader.gif"));
+
     JLabel text = new JLabel(" Both Files Compared Successfully ");
-    JLabel message = new JLabel();
-    JProgressBar progressBar=new JProgressBar();
+
     successMsg() {
         createGUI();
-        //  addImage();
         addText();
 
         Timer timer = new Timer(8000, new ActionListener(){
@@ -62,11 +58,6 @@ public class successMsg {
 
     }
 
-    public void addImage() {
-        image.setSize(600, 500);
-        image.setBounds(150, 300, 650, 100);
-        frame.add(image);
-    }
 
     public void addText() {
         Font font = f.deriveFont(Font.PLAIN , 30f);
