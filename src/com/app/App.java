@@ -52,7 +52,7 @@ import static javax.swing.JOptionPane.YES_OPTION;
  *
  * */
 
-public class App extends helper   {
+public class App extends helper    {
 
     static String filenameA = null;
     static String filenameB = null;
